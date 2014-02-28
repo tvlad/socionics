@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="Tests._04_CommonGraph">
+        <methods>
+          <include name="setUp"/>
+          <include name="_04_T_CommonGraph"/>
+          <include name="tearDown"/>
+          <include name="setFN"/>
+        </methods>
+      </class> <!-- Tests._04_CommonGraph -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
