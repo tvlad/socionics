@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Tests._04_CommonGraph">
+      <class name="Tests._08_RoleInput">
         <methods>
+          <include name="_07_RoleInput"/>
           <include name="setUp"/>
-          <include name="_04_T_CommonGraph"/>
           <include name="tearDown"/>
           <include name="setFN"/>
         </methods>
-      </class> <!-- Tests._04_CommonGraph -->
+      </class> <!-- Tests._08_RoleInput -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

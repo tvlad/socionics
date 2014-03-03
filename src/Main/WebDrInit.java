@@ -76,6 +76,7 @@ public class WebDrInit {
 		driver.get(baseUrl);
 		driver.manage().window().maximize();
 		
+//		driver.manage().deleteAllCookies();
 		
 	}
 		

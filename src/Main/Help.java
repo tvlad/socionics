@@ -2,6 +2,7 @@ package Main;
 
 import java.awt.AWTException;
 import java.awt.Robot;
+import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 import java.io.BufferedReader;
 import java.io.File;
@@ -190,8 +191,9 @@ public class Help {
 		
 		Robot robot = new Robot();
 		robot.mouseMove(dfg.x, dfg.y + 10);
-		robot.mousePress(1);
-		robot.mouseRelease(1);
+		robot.mousePress(InputEvent.BUTTON1_MASK);
+		try { Thread.sleep(1000); } catch(Exception e) {} // Click one second
+		robot.mouseRelease(InputEvent.BUTTON1_MASK);
 		
 	}
 	

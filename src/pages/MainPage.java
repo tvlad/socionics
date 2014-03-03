@@ -34,7 +34,7 @@ public class MainPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath = "//*/header//button")
+	@FindBy(xpath = "//header//button")
 	public static WebElement LogButt;
 	
 	@FindBy(name = "name")
@@ -56,10 +56,13 @@ public class MainPage {
 	public static WebElement LogOutI;
 	
 	@FindBy(linkText = "Add new person")
-	public static WebElement AddPerson;
+	public static  WebElement AddPerson;
 	
 	@FindBy(linkText = "Detect team chemistry score")
 	public WebElement BuildGraph;
+	
+	@FindBy(xpath = "//ng-form[*]/div[3]/div/div/ul/li/a")
+	public WebElement TextForRole;
 	
 //	.//*[@id='dc']/div/div[2]/div/form/div/div[2]/ng-form[1]/div[4]/div[1]/div/ul/li[1]/a
 //	.//*[@id='dc']/div/div[2]/div/form/div/div[2]/ng-form[2]/div[4]/div[2]/div/ul/li/a[1]
@@ -70,7 +73,7 @@ public class MainPage {
 		return driver.findElements(By.xpath("//input")); // 
 	}
 	
-	public List<WebElement> EmailColl() { //
+	public static List<WebElement> EmailColl() { //
 		return driver.findElements(By.xpath(".//*[@id='dc']/div/div[2]/div/form/div/div[2]/ng-form[*]/div[2]/div/div/input")); // 
 	}
 	
@@ -97,7 +100,25 @@ public class MainPage {
 	public List<WebElement> TestLink() { //
 		return driver.findElements(By.xpath("//ng-form[*]/div[4]/div[1]/div/ul/li[4]/a[1]")); //
 	}
-//	//ng-form[*]/div[4]/div[1]/div/ul/li[4]/a[1]
+	
+	public List<WebElement> DeleteColl() { //
+		return driver.findElements(By.cssSelector(".icon-remove-sign")); //
+	}
+	
+	public List<WebElement> RequiredColl() { //
+		return driver.findElements(By.xpath("//ng-form[*]/div[1]/div/div/span")); //
+	}
+	
+	public List<WebElement> MailWarningColl() { //
+		return driver.findElements(By.xpath("//ng-form[*]/div[2]/div/div/span[1]")); //
+	}
+	
+	
+	
+	
+	
+	
+//	//ng-form[*]/div[3]/div/div/ul/li/a
 	
 //	------------------------------------------------------------------------------------------------
 
@@ -111,6 +132,7 @@ public class MainPage {
 			logInLogik(driver);
 		}
 		
+		Thread.sleep(3000);
 	}
 	
 	public static void logInLogik(WebDriver driver) throws InterruptedException {
@@ -120,14 +142,14 @@ public class MainPage {
 		String winHandleBefore = driver.getWindowHandle();
 					
 		LogButt.click();
-		Thread.sleep(1000);
+		Thread.sleep(500);
 		
 		//Switch to new window opened
 		for(String winHandle : driver.getWindowHandles()){
 		    driver.switchTo().window(winHandle);
 		}
 
-		Thread.sleep(1000);
+		Thread.sleep(500);
 //		String newWindow = allWindows.find{ it != originalWindow };
 					
 		FacebookPage fbookPage = new FacebookPage(driver);
@@ -137,15 +159,17 @@ public class MainPage {
 		fbookPage.LoginButt.click();
 		
 		//driver.switchTo().;
-		Thread.sleep(1000);
+		Thread.sleep(500);
 		
 		//Switch back to original browser (first window)
 		driver.switchTo().window(winHandleBefore);
+		
 	}
 	
 //	-----------------------------------------------------------------------------------
 	
 	public static void inputPerson(int pNum) {
+		
 		for (int i = 0; i < pNum; i++) {
 			List<WebElement> sdf = InputColl();
 
@@ -190,7 +214,7 @@ public class MainPage {
 			sdf_2.get(0).click();
 			mainPage.TestLink.click();
 			TestPage testPage = new TestPage(driver);
-			@SuppressWarnings("unused")
+			@SuppressWarnings({ "unused", "static-access" })
 			WebElement QNumg = new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(testPage.QNum));
 			TestPage.takeTest();
 		}
