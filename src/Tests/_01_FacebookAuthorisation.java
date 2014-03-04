@@ -21,7 +21,7 @@ public class _01_FacebookAuthorisation extends WebDrInit {
 		Main.Log.logToFile("_02_T_LogIn", fileName);
 
 		mainPage.logIn(); 
-				
+		Thread.sleep(3000);		
 		Assert.assertEquals(MainPage.InputColl().get(1).getAttribute("value"),
 				getLogin(), "The entered e-mail does not match the e-mail account.");
 	}

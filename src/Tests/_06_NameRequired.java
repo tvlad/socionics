@@ -19,9 +19,9 @@ public class _06_NameRequired extends WebDrInit {
 		
 		mainPage.AddPerson.click();
 		Assert.assertFalse(mainPage.RequiredColl().get(0).isDisplayed());
-		mainPage.TestBut().get(0).click();
+		mainPage.DetectButt().get(0).click();
 		mainPage.TestLink.click();
-		mainPage.TestBut().get(1).click();
+		mainPage.DetectButt().get(1).click();
 		mainPage.TestLink.click();
 		Thread.sleep(500);
 		

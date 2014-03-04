@@ -49,13 +49,16 @@ public class MainPage {
 	@FindBy(linkText = "Detect myself")
 	public WebElement TestLink;
 	
+	@FindBy(linkText = "Invite person to detect")
+	public WebElement InvateLink;
+	
 	@FindBy(xpath = "//*[@id='dc']/header/div/div/div/div/span")
 	public WebElement LoginName;
 	
 	@FindBy(xpath = "//*/header//i")
 	public static WebElement LogOutI;
 	
-	@FindBy(linkText = "Add new person")
+	@FindBy(xpath = "//button[contains(text(),'Add new person')]")
 	public static  WebElement AddPerson;
 	
 	@FindBy(linkText = "Detect team chemistry score")
@@ -73,6 +76,22 @@ public class MainPage {
 		return driver.findElements(By.xpath("//input")); // 
 	}
 	
+	public static List<WebElement> DetectButt() { //
+		return driver.findElements(By.linkText("Detect")); // //ng-form[*]/div[4]/div[1]/div/a
+	}
+	
+	public static List<WebElement> UnDetectButt() { //
+		return driver.findElements(By.xpath("//div[@class='dropdown']/a[string-length() = 3]")); // 
+	}
+	
+	public static List<WebElement> AllButt() { //
+		return driver.findElements(By.xpath("//ng-form[*]/div[4]/div[1]/div/a")); // 
+	}
+	
+	
+	//
+	
+		
 	public static List<WebElement> EmailColl() { //
 		return driver.findElements(By.xpath(".//*[@id='dc']/div/div[2]/div/form/div/div[2]/ng-form[*]/div[2]/div/div/input")); // 
 	}
@@ -81,9 +100,7 @@ public class MainPage {
 		return driver.findElements(By.xpath("//*[@id='dc']/div/div[2]/div/form/div/div[2]/ng-form[*]/div[3]/div/div/input")); //
 	}
 	
-	public List<WebElement> TestBut() { //
-		return driver.findElements(By.linkText("Detect")); // //ng-form[*]/div[4]/div[1]/div/a
-	}
+	
 	
 	public List<WebElement> DelBut() { //
 		return driver.findElements(By.cssSelector(".icon-remove-sign")); //
@@ -116,7 +133,7 @@ public class MainPage {
 	
 	
 	
-	
+	// //div[@class='dropdown']/a[string-length() = 3]
 	
 //	//ng-form[*]/div[3]/div/div/ul/li/a
 	
@@ -168,12 +185,22 @@ public class MainPage {
 	
 //	-----------------------------------------------------------------------------------
 	
+	@SuppressWarnings("static-access")
 	public static void inputPerson(int pNum) {
-		
-		for (int i = 0; i < pNum; i++) {
-			List<WebElement> sdf = InputColl();
+		MainPage mainPage = new MainPage(driver);
+		int fg = mainPage.InputColl().size() - 3;
 
-			if (sdf.size() == pNum * 3) {
+		String fgfh = mainPage.InputColl().get(fg).getAttribute("value");
+
+		if (fgfh.equals("")) {
+
+		} else {
+			AddPerson.click();
+		}
+
+		for (int i = 0; i < pNum; i++) {
+
+			if (i == pNum - 1) {
 				rDataInput();
 			} else {
 				rDataInput();
@@ -181,36 +208,53 @@ public class MainPage {
 			}
 		}
 	}
+
+
+
+//		if (DetectButt().size() == 0) {
+//			AddPerson.click();
+//			for (int i = 0; i < pNum; i++) {
+//				
+//				if (sdf.size() == pNum * 3) {
+//					rDataInput();
+//				} else {
+//					rDataInput();
+//					AddPerson.click();
+//				}
+//			}
+//
+//		}
+//	}
 	
 	public static void rDataInput() {
 		
-		List<WebElement> sdf = InputColl();
+		List<WebElement> Input = InputColl();
+		
+		
 		String name = Random.randomLogin() + " " + Random.randomLogin();
 		String email = Random.randomEmail();
 		String role = Random.randomLogin();
-		sdf.get(sdf.size()-3).sendKeys(name);
-		sdf.get(sdf.size()-2).sendKeys(email);
-		sdf.get(sdf.size()-1).sendKeys(role);
-		try {
-			Thread.sleep(500);
-		} catch (InterruptedException e) {
-			
-			e.printStackTrace();
-		}
+		Input.get(Input.size()-3).sendKeys(name);
+		Input.get(Input.size()-2).sendKeys(email);
+		Input.get(Input.size()-1).sendKeys(role);
+		
 	}
 	
 	public void clickOnFirstDetect() {
 		MainPage mainPage = new MainPage(driver);
-		List<WebElement> sdf = mainPage.TestBut();
+		@SuppressWarnings("static-access")
+		List<WebElement> sdf = mainPage.DetectButt();
 		sdf.get(0).click();
 	}
 	
 	public void clickAndTestAll() {
 		MainPage mainPage = new MainPage(driver);
-		List<WebElement> sdf = mainPage.TestBut();
+		@SuppressWarnings("static-access")
+		List<WebElement> sdf = mainPage.DetectButt();
 		
 		for (int i = 0; i < sdf.size(); i++) {
-			List<WebElement> sdf_2 = mainPage.TestBut();
+			@SuppressWarnings("static-access")
+			List<WebElement> sdf_2 = mainPage.DetectButt();
 			sdf_2.get(0).click();
 			mainPage.TestLink.click();
 			TestPage testPage = new TestPage(driver);

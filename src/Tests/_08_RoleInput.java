@@ -15,11 +15,11 @@ public class _08_RoleInput extends WebDrInit{
 	
 	@SuppressWarnings("static-access")
 	@Test(groups = "mainPage")
-	public void _07_RoleInput() throws InterruptedException  {
+	public void _08_T_RoleInput() throws InterruptedException  {
 		MainPage mainPage = new MainPage(driver);
 		
 		mainPage.AddPerson.click();
-		mainPage.InputColl().get(2).sendKeys("m");
+		mainPage.InputColl().get(2).sendKeys("ma");
 		String hgh = mainPage.TextForRole.getText();
 
 		mainPage.TextForRole.click();

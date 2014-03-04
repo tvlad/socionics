@@ -17,6 +17,7 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 
 
@@ -214,6 +215,13 @@ public class Help {
 		return date;
 	}
 	
+	
+	public void mouseOver(WebElement e) throws InterruptedException {
+		Actions builder = new Actions(driver);
+		Action move = builder.moveToElement(e).build();
+		move.perform();
+		Thread.sleep(500);
+	}
 //	----------------------------------------------------------------
 	
 

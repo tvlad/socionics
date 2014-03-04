@@ -2,31 +2,31 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18696" started-at="2014-03-03T15:53:36Z" finished-at="2014-03-03T15:53:55Z">
+  <suite name="Default suite" duration-ms="37628" started-at="2014-03-04T15:05:52Z" finished-at="2014-03-04T15:06:29Z">
     <groups>
       <group name="mainPage">
-        <method signature="_08_RoleInput._07_RoleInput()[pri:0, instance:Tests._08_RoleInput@35bcfced]" name="_07_RoleInput" class="Tests._08_RoleInput"/>
+        <method signature="_10_ChemistryScoreButtonPopUp._10_T_ChemistryScoreButtonPopUp()[pri:0, instance:Tests._10_ChemistryScoreButtonPopUp@2ce90f2d]" name="_10_T_ChemistryScoreButtonPopUp" class="Tests._10_ChemistryScoreButtonPopUp"/>
       </group> <!-- mainPage -->
     </groups>
-    <test name="Default test" duration-ms="18696" started-at="2014-03-03T15:53:36Z" finished-at="2014-03-03T15:53:55Z">
-      <class name="Tests._08_RoleInput">
-        <test-method status="PASS" signature="setFN()[pri:0, instance:Tests._08_RoleInput@35bcfced]" name="setFN" is-config="true" duration-ms="18" started-at="2014-03-03T17:53:36Z" finished-at="2014-03-03T17:53:36Z">
+    <test name="Default test" duration-ms="37628" started-at="2014-03-04T15:05:52Z" finished-at="2014-03-04T15:06:29Z">
+      <class name="Tests._10_ChemistryScoreButtonPopUp">
+        <test-method status="PASS" signature="setFN()[pri:0, instance:Tests._10_ChemistryScoreButtonPopUp@2ce90f2d]" name="setFN" is-config="true" duration-ms="16" started-at="2014-03-04T17:05:52Z" finished-at="2014-03-04T17:05:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setFN -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests._08_RoleInput@35bcfced]" name="setUp" is-config="true" duration-ms="15770" started-at="2014-03-03T17:53:36Z" finished-at="2014-03-03T17:53:52Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests._10_ChemistryScoreButtonPopUp@2ce90f2d]" name="setUp" is-config="true" duration-ms="11740" started-at="2014-03-04T17:05:52Z" finished-at="2014-03-04T17:06:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="_07_RoleInput()[pri:0, instance:Tests._08_RoleInput@35bcfced]" name="_07_RoleInput" duration-ms="2691" started-at="2014-03-03T17:53:52Z" finished-at="2014-03-03T17:53:54Z">
+        <test-method status="PASS" signature="_10_T_ChemistryScoreButtonPopUp()[pri:0, instance:Tests._10_ChemistryScoreButtonPopUp@2ce90f2d]" name="_10_T_ChemistryScoreButtonPopUp" duration-ms="25661" started-at="2014-03-04T17:06:04Z" finished-at="2014-03-04T17:06:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- _07_RoleInput -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests._08_RoleInput@35bcfced]" name="tearDown" is-config="true" duration-ms="223" started-at="2014-03-03T17:53:54Z" finished-at="2014-03-03T17:53:55Z">
+        </test-method> <!-- _10_T_ChemistryScoreButtonPopUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests._10_ChemistryScoreButtonPopUp@2ce90f2d]" name="tearDown" is-config="true" duration-ms="206" started-at="2014-03-04T17:06:29Z" finished-at="2014-03-04T17:06:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests._08_RoleInput -->
+      </class> <!-- Tests._10_ChemistryScoreButtonPopUp -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
