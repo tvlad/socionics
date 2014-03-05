@@ -19,11 +19,11 @@ public class _09_DetectLink extends WebDrInit{
 		mainPage.AddPerson.click();
 		mainPage.DetectButt().get(0).click();
 		Thread.sleep(500);
-		Assert.assertEquals(mainPage.TestLink.getText(), "Detect myself");		
+		Assert.assertEquals(mainPage.TestLinkColl().get(0).getText(), "Discover my profile");		
 		
 		mainPage.DetectButt().get(1).click();
 		
-		Assert.assertEquals(mainPage.TestLink.getText(), "Detect myself");
+		Assert.assertEquals(mainPage.TestLinkColl().get(1).getText(), "Discover by myself");
 		Assert.assertEquals(mainPage.InvateLink.getText(), "Invite person to detect");
 		
 		

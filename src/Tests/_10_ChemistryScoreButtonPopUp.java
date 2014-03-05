@@ -1,12 +1,11 @@
 package Tests;
 
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Action;
-import org.openqa.selenium.interactions.Actions;
-//import org.testng.Assert;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.MainPage;
+import Main.Help;
 import Main.WebDrInit;
 
 public class _10_ChemistryScoreButtonPopUp extends WebDrInit {
@@ -19,32 +18,36 @@ public class _10_ChemistryScoreButtonPopUp extends WebDrInit {
 	@SuppressWarnings("static-access")
 	@Test(groups = "mainPage")
 	public void _10_T_ChemistryScoreButtonPopUp() throws InterruptedException {
+		
 		MainPage mainPage = new MainPage(driver);
-		mainPage.inputPerson(4);
+		
+		mainPage.inputPerson(1);
 		mainPage.clickAndTestAll();
 
 		WebElement el = mainPage.BuildGraph;
 
-		mouseOver(el);
+		Help.mouseOverHelp(el);
+		String popUpText = mainPage.DetectScorePopUp.getText();
+//		System.out.println("popUpText -" + popUpText);
+		Assert.assertEquals(popUpText, "You need to add at least two people to build a graph!", "Unexpected text in pop-up");
 		
-		Thread.sleep(2000);
-		mainPage.AddPerson.click();
-		
-		
-		mouseOver(el);
-		Thread.sleep(2000);
-		
+		Thread.sleep(500);
+
 		mainPage.inputPerson(1);
 		mainPage.clickAndTestAll();
 		
-		Thread.sleep(2000);
+		Help.mouseOverHelp(el);
+		String popUpText_2 = mainPage.DetectScorePopUp.getText();
+		Assert.assertEquals(popUpText_2, "You can click on button 'Detect team chemistry score'", "Unexpected text in pop-up");
+		
+		Thread.sleep(500);
 
 	}
 
-	public void mouseOver(WebElement el) {
-		Actions builder = new Actions(driver);
-		Action move = builder.moveToElement(el).build();
-		move.perform();
-	}
+//	public void mouseOver(WebElement el) {
+//		Actions builder = new Actions(driver);
+//		Action move = builder.moveToElement(el).build();
+//		move.perform();
+//	}
 
 }

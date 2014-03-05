@@ -21,8 +21,8 @@ import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 
 
-public class Help {
-	private static WebDriver driver;
+public class Help extends WebDrInit{
+//	private static WebDriver driver;
 	
 	// Reading from a text file.
 	public static List<String> textFromFile(String fileName) {
@@ -148,35 +148,7 @@ public class Help {
 		return curDate;
 	}
 
-	public static String MonthToInt(String month) {
-		String monthInt = " ";
-		if (month.equals("января") == true) {
-			monthInt = "1";
-		}
-		if (month.equals("февраля") == true) {
-			monthInt = "2";
-		}
-		if (month.equals("марта") == true) {
-			monthInt = "3";
-		}
-		if (month.equals("апреля") == true) {
-			monthInt = "4";
-		}
-		if (month.equals("мая") == true) {
-			monthInt = "5";
-		}
-		if (month.equals("июня") == true) {
-			monthInt = "6";
-		}
-		if (month.equals("июля") == true) {
-			monthInt = "7";
-		}
-		if (month.equals("августа") == true) {
-			monthInt = "8";
-		}
-		return monthInt;
 
-	}
 	
 	public static void openNewWin(WebElement element) throws AWTException, InterruptedException{
 		Actions actions = new Actions(driver);
@@ -216,7 +188,8 @@ public class Help {
 	}
 	
 	
-	public void mouseOver(WebElement e) throws InterruptedException {
+	public static void mouseOverHelp(WebElement e) throws InterruptedException {
+		
 		Actions builder = new Actions(driver);
 		Action move = builder.moveToElement(e).build();
 		move.perform();
@@ -224,6 +197,28 @@ public class Help {
 	}
 //	----------------------------------------------------------------
 	
+	public static Boolean isEnableElement(WebElement el) {
+		Boolean fg;
+		try {
+			fg = el.isEnabled();
+			 
+		} catch (Exception e) {
+			fg = false;
+		}
+		return fg;
+	}
+	
+	
+	public static Boolean isEnableElements(List <WebElement> el) {
+		Boolean fg;
+		try {
+			fg = el.isEmpty();
+			 
+		} catch (Exception e) {
+			fg = false;
+		}
+		return fg;
+	}
 
 	
 

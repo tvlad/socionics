@@ -1,6 +1,7 @@
 package pages;
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -37,6 +38,11 @@ public class MainPage {
 	@FindBy(xpath = "//header//button")
 	public static WebElement LogButt;
 	
+	@FindBy(css = ".icon-logout.btn-logout")
+	public static WebElement LogOutButt;
+	
+//	.icon-logout.btn-logout
+	
 	@FindBy(name = "name")
 	public WebElement NameField;
 	
@@ -58,7 +64,7 @@ public class MainPage {
 	@FindBy(xpath = "//*/header//i")
 	public static WebElement LogOutI;
 	
-	@FindBy(xpath = "//button[contains(text(),'Add new person')]")
+	@FindBy(xpath = "//button[contains(text(),'Profile your peer')]")
 	public static  WebElement AddPerson;
 	
 	@FindBy(linkText = "Detect team chemistry score")
@@ -67,8 +73,11 @@ public class MainPage {
 	@FindBy(xpath = "//ng-form[*]/div[3]/div/div/ul/li/a")
 	public WebElement TextForRole;
 	
-//	.//*[@id='dc']/div/div[2]/div/form/div/div[2]/ng-form[1]/div[4]/div[1]/div/ul/li[1]/a
-//	.//*[@id='dc']/div/div[2]/div/form/div/div[2]/ng-form[2]/div[4]/div[2]/div/ul/li/a[1]
+	@FindBy(xpath = "//div[@class='send-config']/div[@class='popover top fade in']")
+	public WebElement DetectScorePopUp;
+	
+	
+//	
 //	---------------------------------------------------------------
 	// 
 	
@@ -102,7 +111,7 @@ public class MainPage {
 	
 	
 	
-	public List<WebElement> DelBut() { //
+	public List<WebElement> DeleteButton() { //
 		return driver.findElements(By.cssSelector(".icon-remove-sign")); //
 	}
 	
@@ -114,8 +123,8 @@ public class MainPage {
 		return driver.findElements(By.xpath("//a[contains(@class, 'btn btn-success dropdown-toggle icon ng-binding')]")); //
 	}
 	
-	public List<WebElement> TestLink() { //
-		return driver.findElements(By.xpath("//ng-form[*]/div[4]/div[1]/div/ul/li[4]/a[1]")); //
+	public List<WebElement> TestLinkColl() { //
+		return driver.findElements(By.xpath("//ng-form[*]/div[4]/div[2]/div/ul/li/a[1]")); //
 	}
 	
 	public List<WebElement> DeleteColl() { //
@@ -133,9 +142,10 @@ public class MainPage {
 	
 	
 	
-	// //div[@class='dropdown']/a[string-length() = 3]
 	
-//	//ng-form[*]/div[3]/div/div/ul/li/a
+	// //ng-form[*]/div[4]/div[2]/div/ul/li/a[1]
+	
+//	// //ng-form[*]/div[4]/div[2]/div/ul/li/a[1]
 	
 //	------------------------------------------------------------------------------------------------
 
@@ -210,21 +220,6 @@ public class MainPage {
 	}
 
 
-
-//		if (DetectButt().size() == 0) {
-//			AddPerson.click();
-//			for (int i = 0; i < pNum; i++) {
-//				
-//				if (sdf.size() == pNum * 3) {
-//					rDataInput();
-//				} else {
-//					rDataInput();
-//					AddPerson.click();
-//				}
-//			}
-//
-//		}
-//	}
 	
 	public static void rDataInput() {
 		
@@ -247,22 +242,35 @@ public class MainPage {
 		sdf.get(0).click();
 	}
 	
+	@SuppressWarnings({ "static-access", "unused" })
 	public void clickAndTestAll() {
 		MainPage mainPage = new MainPage(driver);
-		@SuppressWarnings("static-access")
+
 		List<WebElement> sdf = mainPage.DetectButt();
-		
+		List<WebElement> cvb = mainPage.AllButt();
+
 		for (int i = 0; i < sdf.size(); i++) {
-			@SuppressWarnings("static-access")
+
 			List<WebElement> sdf_2 = mainPage.DetectButt();
 			sdf_2.get(0).click();
-			mainPage.TestLink.click();
+			mainPage.TestLinkColl().get(i + (cvb.size() - sdf.size())).click();
 			TestPage testPage = new TestPage(driver);
-			@SuppressWarnings({ "unused", "static-access" })
-			WebElement QNumg = new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(testPage.QNum));
+
+			WebElement QNumg = new WebDriverWait(driver, 10)
+					.until(ExpectedConditions.visibilityOf(testPage.QNum));
 			TestPage.takeTest();
 		}
+		
+	}
+	
+	
+	public List<String> elList(List<WebElement> elements) {
+		List<String> list = new ArrayList<String>();
+		for (WebElement el : elements) {
+			list.add(el.getAttribute("value"));
+		}
+		
+		return list;
 	}
 
 }
-
