@@ -31,6 +31,9 @@ public class TestPage {
 	@FindBy(linkText = "To previous question")
 	public WebElement ToPrevLink;
 	
+	@FindBy(linkText = "To next question")
+	public WebElement ToNextLink;
+	
 //	To previous question
 	
 //	------------------------------------------------------------
@@ -47,7 +50,7 @@ public class TestPage {
 		
 		String nQ = Help.splitStr(fgh.getText(), " ")[3];
 		
-		System.out.println(nQ);
+//		System.out.println(nQ);
 		// System.out.println("integr - " + Integer.parseInt(nQ));
 		for (int i = 0; i < Integer.parseInt(nQ); i++) {
 			// Thread.sleep(1000);

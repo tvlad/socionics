@@ -15,7 +15,7 @@ public class _01_FacebookAuthorisation extends WebDrInit {
 	 * 
 	 */
 	@Test(groups = "mainPage")
-	public void _02_T_FacebookAuthorisation() throws InterruptedException, IOException {
+	public void _01_T_FacebookAuthorisation() throws InterruptedException, IOException {
 		MainPage mainPage = new MainPage(driver);
 		Main.Log.logToFile((Help.date()).toString(), fileName);
 		Main.Log.logToFile("_02_T_LogIn", fileName);

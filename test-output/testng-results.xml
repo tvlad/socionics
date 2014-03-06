@@ -2,27 +2,27 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="54196" started-at="2014-03-05T21:11:17Z" finished-at="2014-03-05T21:12:11Z">
+  <suite name="Default suite" duration-ms="40450" started-at="2014-03-06T15:54:53Z" finished-at="2014-03-06T15:55:33Z">
     <groups>
       <group name="mainPage">
-        <method signature="_12_SaveTeamData._12_T_SaveTeamData()[pri:0, instance:Tests._12_SaveTeamData@a81472b]" name="_12_T_SaveTeamData" class="Tests._12_SaveTeamData"/>
+        <method signature="_12_SaveTeamData._12_T_SaveTeamData()[pri:0, instance:Tests._12_SaveTeamData@2d675d70]" name="_12_T_SaveTeamData" class="Tests._12_SaveTeamData"/>
       </group> <!-- mainPage -->
     </groups>
-    <test name="Default test" duration-ms="54196" started-at="2014-03-05T21:11:17Z" finished-at="2014-03-05T21:12:11Z">
+    <test name="Default test" duration-ms="40450" started-at="2014-03-06T15:54:53Z" finished-at="2014-03-06T15:55:33Z">
       <class name="Tests._12_SaveTeamData">
-        <test-method status="PASS" signature="setFN()[pri:0, instance:Tests._12_SaveTeamData@a81472b]" name="setFN" is-config="true" duration-ms="34" started-at="2014-03-05T23:11:17Z" finished-at="2014-03-05T23:11:17Z">
+        <test-method status="PASS" signature="setFN()[pri:0, instance:Tests._12_SaveTeamData@2d675d70]" name="setFN" is-config="true" duration-ms="19" started-at="2014-03-06T17:54:53Z" finished-at="2014-03-06T17:54:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setFN -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests._12_SaveTeamData@a81472b]" name="setUp" is-config="true" duration-ms="19896" started-at="2014-03-05T23:11:17Z" finished-at="2014-03-05T23:11:37Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests._12_SaveTeamData@2d675d70]" name="setUp" is-config="true" duration-ms="12864" started-at="2014-03-06T17:54:53Z" finished-at="2014-03-06T17:55:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="_12_T_SaveTeamData()[pri:0, instance:Tests._12_SaveTeamData@a81472b]" name="_12_T_SaveTeamData" duration-ms="33822" started-at="2014-03-05T23:11:37Z" finished-at="2014-03-05T23:12:11Z">
+        <test-method status="PASS" signature="_12_T_SaveTeamData()[pri:0, instance:Tests._12_SaveTeamData@2d675d70]" name="_12_T_SaveTeamData" duration-ms="27366" started-at="2014-03-06T17:55:06Z" finished-at="2014-03-06T17:55:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- _12_T_SaveTeamData -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests._12_SaveTeamData@a81472b]" name="tearDown" is-config="true" duration-ms="452" started-at="2014-03-05T23:12:11Z" finished-at="2014-03-05T23:12:11Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests._12_SaveTeamData@2d675d70]" name="tearDown" is-config="true" duration-ms="206" started-at="2014-03-06T17:55:33Z" finished-at="2014-03-06T17:55:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

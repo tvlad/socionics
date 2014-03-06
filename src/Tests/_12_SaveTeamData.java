@@ -23,10 +23,10 @@ public class _12_SaveTeamData extends WebDrInit {
 		MainPage mainPage = new MainPage(driver);
 
 		mainPage.logIn();
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		mainPage.inputPerson(2);
 		mainPage.clickAndTestAll();
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		
 		List<String> list_1 = mainPage.elList(mainPage.InputColl());
 //		for (String string : list_1) {
