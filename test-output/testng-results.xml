@@ -2,31 +2,31 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="40450" started-at="2014-03-06T15:54:53Z" finished-at="2014-03-06T15:55:33Z">
+  <suite name="Default suite" duration-ms="24069" started-at="2014-03-07T12:50:25Z" finished-at="2014-03-07T12:50:49Z">
     <groups>
-      <group name="mainPage">
-        <method signature="_12_SaveTeamData._12_T_SaveTeamData()[pri:0, instance:Tests._12_SaveTeamData@2d675d70]" name="_12_T_SaveTeamData" class="Tests._12_SaveTeamData"/>
-      </group> <!-- mainPage -->
+      <group name="graphPage">
+        <method signature="_19_CommonElementsGraph._04_T_CommonElementsGraph()[pri:0, instance:Tests._19_CommonElementsGraph@1083964f]" name="_04_T_CommonElementsGraph" class="Tests._19_CommonElementsGraph"/>
+      </group> <!-- graphPage -->
     </groups>
-    <test name="Default test" duration-ms="40450" started-at="2014-03-06T15:54:53Z" finished-at="2014-03-06T15:55:33Z">
-      <class name="Tests._12_SaveTeamData">
-        <test-method status="PASS" signature="setFN()[pri:0, instance:Tests._12_SaveTeamData@2d675d70]" name="setFN" is-config="true" duration-ms="19" started-at="2014-03-06T17:54:53Z" finished-at="2014-03-06T17:54:53Z">
+    <test name="Default test" duration-ms="24069" started-at="2014-03-07T12:50:25Z" finished-at="2014-03-07T12:50:49Z">
+      <class name="Tests._19_CommonElementsGraph">
+        <test-method status="PASS" signature="setFN()[pri:0, instance:Tests._19_CommonElementsGraph@1083964f]" name="setFN" is-config="true" duration-ms="17" started-at="2014-03-07T14:50:25Z" finished-at="2014-03-07T14:50:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setFN -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests._12_SaveTeamData@2d675d70]" name="setUp" is-config="true" duration-ms="12864" started-at="2014-03-06T17:54:53Z" finished-at="2014-03-06T17:55:06Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests._19_CommonElementsGraph@1083964f]" name="setUp" is-config="true" duration-ms="10691" started-at="2014-03-07T14:50:25Z" finished-at="2014-03-07T14:50:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="_12_T_SaveTeamData()[pri:0, instance:Tests._12_SaveTeamData@2d675d70]" name="_12_T_SaveTeamData" duration-ms="27366" started-at="2014-03-06T17:55:06Z" finished-at="2014-03-06T17:55:33Z">
+        <test-method status="PASS" signature="_04_T_CommonElementsGraph()[pri:0, instance:Tests._19_CommonElementsGraph@1083964f]" name="_04_T_CommonElementsGraph" duration-ms="13106" started-at="2014-03-07T14:50:36Z" finished-at="2014-03-07T14:50:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- _12_T_SaveTeamData -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests._12_SaveTeamData@2d675d70]" name="tearDown" is-config="true" duration-ms="206" started-at="2014-03-06T17:55:33Z" finished-at="2014-03-06T17:55:33Z">
+        </test-method> <!-- _04_T_CommonElementsGraph -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests._19_CommonElementsGraph@1083964f]" name="tearDown" is-config="true" duration-ms="256" started-at="2014-03-07T14:50:49Z" finished-at="2014-03-07T14:50:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests._12_SaveTeamData -->
+      </class> <!-- Tests._19_CommonElementsGraph -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

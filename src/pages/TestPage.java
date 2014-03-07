@@ -34,7 +34,12 @@ public class TestPage {
 	@FindBy(linkText = "To next question")
 	public WebElement ToNextLink;
 	
-//	To previous question
+	@FindBy(xpath = "//header/div/div/div/div[1]/div[2]/div")
+	public WebElement WarningPopUp;
+	
+	
+	
+//	//header/div/div/div/div[1]/div[2]/div
 	
 //	------------------------------------------------------------
 	
@@ -46,9 +51,9 @@ public class TestPage {
 //	------------------------------------------------------------
 	
 	public static void takeTest()  {
-		WebElement fgh = driver.findElement(By.xpath("//*[@id='dc']/div/div[2]/div/span"));
+
 		
-		String nQ = Help.splitStr(fgh.getText(), " ")[3];
+		String nQ = Help.splitStr(QNum.getText(), " ")[3];
 		
 //		System.out.println(nQ);
 		// System.out.println("integr - " + Integer.parseInt(nQ));
@@ -65,6 +70,28 @@ public class TestPage {
 						.visibilityOf(testResultPage.DefinedSociotype));
 
 		testResultPage.GoToTeam.click();
+	}
+	
+	public static void takeTestWithOutReturn()  {
+
+		
+		String nQ = Help.splitStr(QNum.getText(), " ")[3];
+		
+//		System.out.println(nQ);
+		// System.out.println("integr - " + Integer.parseInt(nQ));
+		for (int i = 0; i < Integer.parseInt(nQ); i++) {
+			// Thread.sleep(1000);
+			TestButtColl().get(Random.rInt()).click();
+		}
+		
+		TestResultPage testResultPage = new TestResultPage(driver);
+
+		@SuppressWarnings("unused")
+		WebElement sociotype = new WebDriverWait(driver, 10)
+				.until(ExpectedConditions
+						.visibilityOf(testResultPage.DefinedSociotype));
+
+
 	}
 
 }

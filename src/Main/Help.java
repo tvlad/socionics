@@ -165,7 +165,7 @@ public class Help extends WebDrInit{
 		Robot robot = new Robot();
 		robot.mouseMove(dfg.x, dfg.y + 10);
 		robot.mousePress(InputEvent.BUTTON1_MASK);
-		try { Thread.sleep(1000); } catch(Exception e) {} // Click one second
+		try { Thread.sleep(500); } catch(Exception e) {} // Click one second
 		robot.mouseRelease(InputEvent.BUTTON1_MASK);
 		
 	}
