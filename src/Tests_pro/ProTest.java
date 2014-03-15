@@ -16,12 +16,15 @@ public class ProTest extends WebDrInit {
 	@Test(groups = "mainPage")
 	public void _00_T_Pro() throws InterruptedException {
 		MainPage mainPage = new MainPage(driver);
-
-		mainPage.inputPerson(3);
-
-		Thread.sleep(3000);
 		
-		mainPage.AddPerson.click();
+		System.out.println("text - " + mainPage.DetectButt().get(0).getText());
+		
+//		mainPage.logIn();
+//		mainPage.inputPerson(15);
+//		Thread.sleep(1000);
+//		mainPage.clickAndTestAll();
+		
+//		mainPage.AddPerson.click();
 		
 //		int fg = mainPage.InputColl().size() - 3;
 //		
@@ -31,9 +34,9 @@ public class ProTest extends WebDrInit {
 //		
 //		mainPage.inputPerson(1);
 //		
-		Thread.sleep(4000);
+//		Thread.sleep(4000);
 		
-		mainPage.inputPerson(2);
+//		mainPage.inputPerson(2);
 
 	}
 

@@ -40,5 +40,15 @@ private WebDriver driver;
 	public List<WebElement> circleColl() { //
 		return driver.findElements(By.cssSelector("div[id^='window']")); //
 	}
+	
+//	div.fullName
+	
+	public List<WebElement> lineColl() { //
+		return driver.findElements(By.cssSelector("div#container path")); //
+	}
+	
+	public List<WebElement> popUpColl() { //
+		return driver.findElements(By.cssSelector("div.fullName")); //
+	}
 
 }

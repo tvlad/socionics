@@ -47,6 +47,13 @@ public class Help extends WebDrInit{
 		String[] splits = s.split("[" + _chr + "]+"); // "[-,. ]+"
 		return splits;
 	}
+	
+	
+	public static String noBr(String str) {
+		str = str.replace('\n', ' ');
+		return str;
+//	Меняет символ конец строки на пробел
+	}
 
 	public static String randomEmail() {
 
@@ -219,6 +226,8 @@ public class Help extends WebDrInit{
 		}
 		return fg;
 	}
+	
+
 
 	
 

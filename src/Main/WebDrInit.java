@@ -36,7 +36,7 @@ public class WebDrInit {
 	 */
 	
 	protected static WebDriver driver; 
-	public String baseUrl;
+	public static String baseUrl;
 	private StringBuffer verificationErrors = new StringBuffer();
 //	private pages.LogInPage logInPage;
 	public WebDriverWait wait;

@@ -3,105 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Tests._07_IllegalMail">
+      <class name="Tests._22_PopUpOnVertex">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
           <include name="setFN"/>
+          <include name="_22_T_PopUpOnVertex"/>
         </methods>
-      </class> <!-- Tests._07_IllegalMail -->
-      <class name="Tests._10_ChemistryScoreButtonPopUp">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests._10_ChemistryScoreButtonPopUp -->
-      <class name="Tests._01_FacebookAuthorisation">
-        <methods>
-          <include name="setUp"/>
-          <include name="_01_T_FacebookAuthorisation"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests._01_FacebookAuthorisation -->
-      <class name="Tests._12_SaveTeamData">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests._12_SaveTeamData -->
-      <class name="Tests._16_FwBwArrows">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests._16_FwBwArrows -->
-      <class name="Tests._13_LockEdit">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests._13_LockEdit -->
-      <class name="Tests._09_DetectLink">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests._09_DetectLink -->
-      <class name="Tests._02_InputFieldText">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests._02_InputFieldText -->
-      <class name="Tests._04_PopUpOnDetectMy">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests._04_PopUpOnDetectMy -->
-      <class name="Tests._14_QqForMyself">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests._14_QqForMyself -->
-      <class name="Tests._03_PopUpOnLogin">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests._03_PopUpOnLogin -->
-      <class name="Tests._15_QqDiscByMyself">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests._15_QqDiscByMyself -->
-      <class name="Tests._06_NameRequired">
-        <methods>
-          <include name="setUp"/>
-          <include name="_06_T_NameRequired"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests._06_NameRequired -->
-      <class name="Tests._11_DeleteEl">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests._11_DeleteEl -->
-      <class name="Tests._05_PopUpOnDetectMy_02">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests._05_PopUpOnDetectMy_02 -->
-      <class name="Tests._08_RoleInput">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests._08_RoleInput -->
+      </class> <!-- Tests._22_PopUpOnVertex -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

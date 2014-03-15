@@ -2,31 +2,31 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24069" started-at="2014-03-07T12:50:25Z" finished-at="2014-03-07T12:50:49Z">
+  <suite name="Default suite" duration-ms="16070" started-at="2014-03-14T15:31:56Z" finished-at="2014-03-14T15:32:12Z">
     <groups>
-      <group name="graphPage">
-        <method signature="_19_CommonElementsGraph._04_T_CommonElementsGraph()[pri:0, instance:Tests._19_CommonElementsGraph@1083964f]" name="_04_T_CommonElementsGraph" class="Tests._19_CommonElementsGraph"/>
-      </group> <!-- graphPage -->
+      <group name="mainPage">
+        <method signature="_08_RoleInput._08_T_RoleInput()[pri:0, instance:Tests._08_RoleInput@7388665b]" name="_08_T_RoleInput" class="Tests._08_RoleInput"/>
+      </group> <!-- mainPage -->
     </groups>
-    <test name="Default test" duration-ms="24069" started-at="2014-03-07T12:50:25Z" finished-at="2014-03-07T12:50:49Z">
-      <class name="Tests._19_CommonElementsGraph">
-        <test-method status="PASS" signature="setFN()[pri:0, instance:Tests._19_CommonElementsGraph@1083964f]" name="setFN" is-config="true" duration-ms="17" started-at="2014-03-07T14:50:25Z" finished-at="2014-03-07T14:50:25Z">
+    <test name="Default test" duration-ms="16070" started-at="2014-03-14T15:31:56Z" finished-at="2014-03-14T15:32:12Z">
+      <class name="Tests._08_RoleInput">
+        <test-method status="PASS" signature="setFN()[pri:0, instance:Tests._08_RoleInput@7388665b]" name="setFN" is-config="true" duration-ms="17" started-at="2014-03-14T17:31:56Z" finished-at="2014-03-14T17:31:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setFN -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests._19_CommonElementsGraph@1083964f]" name="setUp" is-config="true" duration-ms="10691" started-at="2014-03-07T14:50:25Z" finished-at="2014-03-07T14:50:36Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests._08_RoleInput@7388665b]" name="setUp" is-config="true" duration-ms="14381" started-at="2014-03-14T17:31:56Z" finished-at="2014-03-14T17:32:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="_04_T_CommonElementsGraph()[pri:0, instance:Tests._19_CommonElementsGraph@1083964f]" name="_04_T_CommonElementsGraph" duration-ms="13106" started-at="2014-03-07T14:50:36Z" finished-at="2014-03-07T14:50:49Z">
+        <test-method status="PASS" signature="_08_T_RoleInput()[pri:0, instance:Tests._08_RoleInput@7388665b]" name="_08_T_RoleInput" duration-ms="1389" started-at="2014-03-14T17:32:11Z" finished-at="2014-03-14T17:32:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- _04_T_CommonElementsGraph -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests._19_CommonElementsGraph@1083964f]" name="tearDown" is-config="true" duration-ms="256" started-at="2014-03-07T14:50:49Z" finished-at="2014-03-07T14:50:49Z">
+        </test-method> <!-- _08_T_RoleInput -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests._08_RoleInput@7388665b]" name="tearDown" is-config="true" duration-ms="279" started-at="2014-03-14T17:32:12Z" finished-at="2014-03-14T17:32:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests._19_CommonElementsGraph -->
+      </class> <!-- Tests._08_RoleInput -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

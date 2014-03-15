@@ -20,6 +20,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import Main.DataProv;
 import Main.Random;
 import Main.WebDrInit;
 import pages.FacebookPage;
@@ -67,7 +68,7 @@ public class MainPage {
 	@FindBy(xpath = "//button[contains(text(),'Profile your peer')]")
 	public static  WebElement AddPerson;
 	
-	@FindBy(linkText = "Detect team chemistry score")
+	@FindBy(xpath = "//button[contains(text(),'Detect team chemistry score')]")
 	public WebElement BuildGraph;
 	
 	@FindBy(xpath = "//ng-form[*]/div[3]/div/div/ul/li/a")
@@ -253,12 +254,17 @@ public class MainPage {
 
 			List<WebElement> sdf_2 = mainPage.DetectButt();
 			sdf_2.get(0).click();
-			mainPage.TestLinkColl().get(i + (cvb.size() - sdf.size())).click();
+			// проверяет не произошел ли переход на тестовую страницу
+			if (DataProv.prop("baseUrl").equals(driver.getCurrentUrl())) {
+				mainPage.TestLinkColl().get(i + (cvb.size() - sdf.size())).click();
+			}
+			
 			TestPage testPage = new TestPage(driver);
-
-			WebElement QNumg = new WebDriverWait(driver, 10)
-					.until(ExpectedConditions.visibilityOf(testPage.QNum));
+			
+			WebElement QNumg = new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(testPage.QNum));
 			TestPage.takeTest();
+			
+				
 		}
 		
 	}
@@ -272,5 +278,10 @@ public class MainPage {
 		
 		return list;
 	}
+	
+	
+
+		
+	
 
 }
