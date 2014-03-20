@@ -4,6 +4,7 @@ package Tests;
 import java.io.IOException;
 
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -22,6 +23,7 @@ public class _19_CommonElementsGraph extends WebDrInit{
 	 * Verify presence of elements on graph page
 	 */
 
+	@SuppressWarnings("static-access")
 	@Test(groups = "graphPage")
 	public void _09_T_CommonElementsGraph() throws IOException, InterruptedException {
 

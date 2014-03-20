@@ -17,16 +17,13 @@ public class _09_DetectLink extends WebDrInit{
 	public void _09_T_DetectLink() throws InterruptedException  {
 		MainPage mainPage = new MainPage(driver);
 		mainPage.AddPerson.click();
-		mainPage.DetectButt().get(0).click();
-		Thread.sleep(500);
-		Assert.assertEquals(mainPage.TestLinkColl().get(0).getText(), "Discover my profile");		
-		
+				
 		mainPage.DetectButt().get(1).click();
 		
 		Assert.assertEquals(mainPage.TestLinkColl().get(1).getText(), "Discover by myself");
 		Assert.assertEquals(mainPage.InvateLink.getText(), "Invite person to detect");
 		
-		
+		Thread.sleep(500);
 	}
 
 }

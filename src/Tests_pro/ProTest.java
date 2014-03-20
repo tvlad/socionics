@@ -17,12 +17,13 @@ public class ProTest extends WebDrInit {
 	public void _00_T_Pro() throws InterruptedException {
 		MainPage mainPage = new MainPage(driver);
 		
-		System.out.println("text - " + mainPage.DetectButt().get(0).getText());
+//		System.out.println("text - " + mainPage.DetectButt().get(0).getText());
 		
-//		mainPage.logIn();
-//		mainPage.inputPerson(15);
-//		Thread.sleep(1000);
-//		mainPage.clickAndTestAll();
+		mainPage.logIn();
+		Thread.sleep(3000);
+		mainPage.inputPerson(10);
+		Thread.sleep(1000);
+		mainPage.clickAndTestAll();
 		
 //		mainPage.AddPerson.click();
 		

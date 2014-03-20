@@ -22,7 +22,7 @@ public class _20_SelectVertex extends WebDrInit{
 	 * Verify vertices are returned to its original place after move. on graph page
 	 */
 
-	@SuppressWarnings("unused")
+	@SuppressWarnings({ "unused", "static-access" })
 	@Test(groups = "graphPage")
 	public void _20_T_SelectVertex() throws IOException, InterruptedException {
 

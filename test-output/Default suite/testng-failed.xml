@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Tests._22_PopUpOnVertex">
+      <class name="Tests._26_AddPersonFromGraph">
         <methods>
           <include name="setUp"/>
-          <include name="tearDown"/>
+          <include name="_25_T_ClickOnVertex"/>
           <include name="setFN"/>
-          <include name="_22_T_PopUpOnVertex"/>
         </methods>
-      </class> <!-- Tests._22_PopUpOnVertex -->
+      </class> <!-- Tests._26_AddPersonFromGraph -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

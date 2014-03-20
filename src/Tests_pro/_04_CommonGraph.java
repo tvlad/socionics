@@ -20,6 +20,7 @@ import Main.WebDrInit;
 
 public class _04_CommonGraph extends WebDrInit {
 
+	@SuppressWarnings("static-access")
 	@Test(groups = "demo")
 	public void _04_T_CommonGraph() throws IOException, InterruptedException {
 		String testName = "_04_T_CommonGraph";

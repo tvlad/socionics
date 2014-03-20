@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Socionic suite">
+	<test verbose="2" name="mainPage" preserve-order="true">
+		<packages>demo</packages>
+		<classes>
+			<class name="Tests._01_FacebookAuthorisation" />
+			<class name="Tests._02_InputFieldText" />
+			<class name="Tests._03_PopUpOnLogin" />	
+			<class name="Tests._04_PopUpOnDetectMy" />
+			<class name="Tests._05_PopUpOnDetectMy_02" />
+			<class name="Tests._06_NameRequired" />	
+			<class name="Tests._07_IllegalMail" />	
+			<class name="Tests._08_RoleInput" />
+			<class name="Tests._09_DetectLink" />
+			<class name="Tests._10_ChemistryScoreButtonPopUp" />
+			<class name="Tests._11_DeleteEl" />
+			<class name="Tests._12_SaveTeamData" />
+			<class name="Tests._13_LockEdit" />
+			<class name="Tests._14_QqForMyself" />
+			<class name="Tests._15_QqDiscByMyself" />
+			<class name="Tests._16_FwBwArrows" />
+			<class name="Tests._17_WarningPopUpTestPage" />
+			<class name="Tests._18_SocTypeAssert" />
+		</classes>
+	</test><!--Socionic suite-->
+</suite><!--Socionic suite-->

@@ -5,7 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.ElementNotVisibleException;
+//import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -53,7 +54,7 @@ public class MainPage {
 	@FindBy(linkText = "Detect")
 	public WebElement TestButt;
 	
-	@FindBy(linkText = "Detect myself")
+	@FindBy(linkText = "Discover by myself")
 	public WebElement TestLink;
 	
 	@FindBy(linkText = "Invite person to detect")
@@ -152,15 +153,15 @@ public class MainPage {
 
 	
 	public void logIn() throws InterruptedException {
-		
+		Thread.sleep(500);
 		try {
 			logInLogik(driver);
-		} catch (NoSuchElementException e) {
+		} catch (ElementNotVisibleException e) {
 			LogOutI.click();
 			logInLogik(driver);
 		}
 		
-		Thread.sleep(3000);
+		Thread.sleep(500);
 	}
 	
 	public static void logInLogik(WebDriver driver) throws InterruptedException {
@@ -182,6 +183,7 @@ public class MainPage {
 					
 		FacebookPage fbookPage = new FacebookPage(driver);
 		
+		fbookPage.EmailLog.clear();
 		fbookPage.EmailLog.sendKeys(WebDrInit.getLogin());
 		fbookPage.PassLog.sendKeys(WebDrInit.getPass());
 		fbookPage.LoginButt.click();

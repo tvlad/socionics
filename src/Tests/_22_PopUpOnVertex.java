@@ -23,6 +23,7 @@ public class _22_PopUpOnVertex extends WebDrInit{
 	@Test(groups = "graphPage")
 	public void _22_T_PopUpOnVertex() throws IOException, InterruptedException {
 
+		
 		MainPage mainPage = new MainPage(driver);
 
 		int nPerson = 2;

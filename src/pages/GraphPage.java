@@ -8,9 +8,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import Main.Help;
+
 public class GraphPage {
 	
-private WebDriver driver;
+private static WebDriver driver;
 	
 	public GraphPage(WebDriver _driver){
 		driver = _driver;
@@ -31,17 +33,42 @@ private WebDriver driver;
 	
 	@FindBy(css = "div[id='charts_team1']")
 	public WebElement RelationsVarietyGraph;
+	
+	@FindBy(xpath = "//button[contains(text(), 'OK')]")
+	public static WebElement AlertOK;
+	
+	@FindBy(xpath = "//button[contains(text(), 'Cancel')]")
+	public WebElement AlertCancel;
+	
+	@FindBy(xpath = "//button[contains(text(), 'List view')]")
+	public WebElement ListViewButton;
+	
+	@FindBy(xpath = "//button[contains(text(), 'Graph view')]")
+	public WebElement GraphViewButton;
+	
+	@FindBy(xpath = "//div[2]/div[3]/div[1]/div[1]")
+	public WebElement NameOnRightGraph;
+	
+	@FindBy(xpath = "//div[3]/div[1]/div[2]")
+	public WebElement SocioOnRightGraph;
+	
+	@FindBy(css = ".btn.btn-warning > i")
+	public WebElement AddPersonFromGraph;
 
 
-//	
+//	List view . Add new person 
 	
 // ---------------------------------------------------------------------------
 	
-	public List<WebElement> circleColl() { //
+	public static List<WebElement> circleColl() { //
 		return driver.findElements(By.cssSelector("div[id^='window']")); //
 	}
 	
-//	div.fullName
+	public static List<WebElement> circleDelColl() { //
+		return driver.findElements(By.cssSelector("div[id^='window'] > i")); //
+	}
+	
+//	div.fullName  #window200 > i.icon-remove-sign
 	
 	public List<WebElement> lineColl() { //
 		return driver.findElements(By.cssSelector("div#container path")); //
@@ -49,6 +76,24 @@ private WebDriver driver;
 	
 	public List<WebElement> popUpColl() { //
 		return driver.findElements(By.cssSelector("div.fullName")); //
+	}
+	
+	
+	public static void delAllPer() throws InterruptedException {
+		int cyrcles = circleDelColl().size();
+		while ( cyrcles > 1){
+			
+			Help.mouseOverHelp(circleColl().get(cyrcles-1));
+			circleDelColl().get(cyrcles-1).click();
+			AlertOK.click();
+			cyrcles = circleDelColl().size();
+			
+			Thread.sleep(1000);
+		}
+		
+		
+		
+		
 	}
 
 }

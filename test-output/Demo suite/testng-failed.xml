@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Demo suite]">
+  <test name="mainPage(failed)">
+    <classes>
+      <class name="Tests._01_FacebookAuthorisation">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="setFN"/>
+        </methods>
+      </class> <!-- Tests._01_FacebookAuthorisation -->
+      <class name="Tests._02_InputFieldText">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="_02_T_nputFieldText"/>
+        </methods>
+      </class> <!-- Tests._02_InputFieldText -->
+    </classes>
+  </test> <!-- mainPage(failed) -->
+</suite> <!-- Failed suite [Demo suite] -->

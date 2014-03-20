@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.MainPage;
+import Main.DataProv;
 import Main.Help;
 import Main.WebDrInit;
 
@@ -21,9 +22,11 @@ public class _01_FacebookAuthorisation extends WebDrInit {
 		Main.Log.logToFile("_02_T_LogIn", fileName);
 
 		mainPage.logIn(); 
-		Thread.sleep(1500);		
-		Assert.assertEquals(MainPage.InputColl().get(1).getAttribute("value"),
-				getLogin(), "The entered e-mail does not match the e-mail account.");
+		Thread.sleep(1500);
+		
+		Assert.assertEquals(mainPage.LoginName.getText(), DataProv.prop("name"));
+//		Assert.assertEquals(MainPage.InputColl().get(1).getAttribute("value"),
+//				getLogin(), "The entered e-mail does not match the e-mail account.");
 	}
 
 }
