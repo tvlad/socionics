@@ -45,7 +45,10 @@ public class _22_PopUpOnVertex extends WebDrInit{
 		
 		Help.mouseOverHelp(graphPage.circleColl().get(0));
 		
-		Assert.assertEquals(graphPage.popUpColl().get(0).getAttribute("style"), "display: block;", "Pop-up invisible");
+		String att = graphPage.popUpColl().get(0).getAttribute("style");
+		String[] sdf = Help.splitStr(att, ";");
+		
+		Assert.assertEquals(sdf[sdf.length-1], " display: block", "Pop-up invisible");
 		
 		String str = Help.noBr(graphPage.popUpColl().get(0).getText());
 		

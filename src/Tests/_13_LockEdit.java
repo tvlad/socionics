@@ -12,7 +12,7 @@ public class _13_LockEdit extends WebDrInit {
 
 	/*
 	 * Verifying that fields 'Name', 'E-mail' and 'Role' locked for editing
-	 * after Testing.
+	 * after Testing. Не актуально, на сегодня проверяет, что такого атрибута нет.
 	 */
 
 	@SuppressWarnings("static-access")
@@ -27,7 +27,7 @@ public class _13_LockEdit extends WebDrInit {
 		Thread.sleep(1000);
 
 		for (WebElement el : mainPage.InputColl()) {
-			Assert.assertEquals(el.getAttribute("disabled"), "true");
+			Assert.assertEquals(el.getAttribute("disabled"), null);
 		}
 	}
 }

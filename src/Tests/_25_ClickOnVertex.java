@@ -49,13 +49,20 @@ public class _25_ClickOnVertex extends WebDrInit{
 		System.out.println("text - " + popUpText[0] + " " + popUpText[1]);
 		System.out.println("text - " + popUpText[3] + " " + popUpText[4] + " " + popUpText[5]);
 		
-		Assert.assertEquals(graphPage.NameOnRightGraph.getText(), popUpText[0] + " " + popUpText[1]);
-		Assert.assertEquals(graphPage.SocioOnRightGraph.getText(), popUpText[3] + " " + popUpText[4] + " " + popUpText[5]);
+		Assert.assertEquals(graphPage.NameOnRightGraph.getText(), popUpText[0] + " " + popUpText[1]); // Name assert
+		Assert.assertEquals(graphPage.SocioOnRightGraph.getText(), popUpText[3] + " " + popUpText[4] + " " + popUpText[5]); // Sociotype assert
+		Assert.assertEquals(graphPage.RelationsVarietyHeader.getText(), "Relations Variety");
+		Assert.assertEquals(graphPage.PersonalProfileHeader.getText(), "Personal Profile");
+		Assert.assertEquals(graphPage.DescriptionHeader.getText(), "Description");
 		
 		Thread.sleep(2000);
-		
-//		Assert.assertEquals(mainPage.AllButt().size(), 1);
 
+	}
+	
+	@Test(groups = "graphPage")
+	public void _26_T_(){
+		GraphPage graphPage = new GraphPage(driver);
+		Assert.assertEquals(graphPage.TopFitsHeader.getText(), "Top Fits");
 	}
 
 }

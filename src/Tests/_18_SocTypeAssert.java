@@ -17,19 +17,18 @@ public class _18_SocTypeAssert extends WebDrInit{
 	
 	
 	/*
-	 * Verify pop-up unlogin warning after testing
+	 * Verify соответствие социотипа в тесте и в списке
 	 */
 
 
 	@SuppressWarnings({ "static-access"})
 	@Test(groups = "testPage")
-	public void _17_T_WarningPopUpTestPage() throws InterruptedException {
+	public void _18_T_SocTypeAssert() throws InterruptedException {
 
 		MainPage mainPage = new MainPage(driver);
 		mainPage.inputPerson(1);
 		mainPage.DetectButt().get(0).click();
-		mainPage.TestLinkColl().get(0).click();
-
+		
 		Thread.sleep(500);
 		
 		TestPage testPage = new TestPage(driver);

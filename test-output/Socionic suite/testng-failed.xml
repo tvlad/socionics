@@ -3,123 +3,164 @@
 <suite name="Failed suite [Socionic suite]">
   <test name="mainPage(failed)">
     <classes>
-      <class name="Tests._18_SocTypeAssert">
+      <class name="Tests._22_PopUpOnVertex">
         <methods>
-          <include name="setUp"/>
-          <include name="_17_T_WarningPopUpTestPage"/>
-          <include name="tearDown"/>
           <include name="setFN"/>
-        </methods>
-      </class> <!-- Tests._18_SocTypeAssert -->
-      <class name="Tests._15_QqDiscByMyself">
-        <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- Tests._15_QqDiscByMyself -->
-      <class name="Tests._17_WarningPopUpTestPage">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="_17_T_WarningPopUpTestPage"/>
-        </methods>
-      </class> <!-- Tests._17_WarningPopUpTestPage -->
-      <class name="Tests._07_IllegalMail">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests._07_IllegalMail -->
-      <class name="Tests._12_SaveTeamData">
-        <methods>
-          <include name="setUp"/>
-          <include name="_12_T_SaveTeamData"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests._12_SaveTeamData -->
-      <class name="Tests._06_NameRequired">
-        <methods>
-          <include name="setUp"/>
-          <include name="_06_T_NameRequired"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests._06_NameRequired -->
-      <class name="Tests._16_FwBwArrows">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="_15_T_QqDiscByMyself"/>
-        </methods>
-      </class> <!-- Tests._16_FwBwArrows -->
-      <class name="Tests._03_PopUpOnLogin">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests._03_PopUpOnLogin -->
-      <class name="Tests._08_RoleInput">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests._08_RoleInput -->
-      <class name="Tests._14_QqForMyself">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="_14_T_QqForMyself"/>
-        </methods>
-      </class> <!-- Tests._14_QqForMyself -->
-      <class name="Tests._04_PopUpOnDetectMy">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests._04_PopUpOnDetectMy -->
-      <class name="Tests._10_ChemistryScoreButtonPopUp">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests._10_ChemistryScoreButtonPopUp -->
-      <class name="Tests._01_FacebookAuthorisation">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests._01_FacebookAuthorisation -->
-      <class name="Tests._05_PopUpOnDetectMy_02">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests._05_PopUpOnDetectMy_02 -->
+      </class> <!-- Tests._22_PopUpOnVertex -->
       <class name="Tests._11_DeleteEl">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- Tests._11_DeleteEl -->
+      <class name="Tests._07_IllegalMail">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests._07_IllegalMail -->
+      <class name="Tests._13_LockEdit">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests._13_LockEdit -->
+      <class name="Tests._25_ClickOnVertex">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests._25_ClickOnVertex -->
+      <class name="Tests._17_WarningPopUpTestPage">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests._17_WarningPopUpTestPage -->
+      <class name="Tests._05_PopUpOnDetectMy_02">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests._05_PopUpOnDetectMy_02 -->
+      <class name="Tests._19_CommonElementsGraph">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests._19_CommonElementsGraph -->
+      <class name="Tests._16_FwBwArrows">
+        <methods>
+          <include name="_15_T_QqDiscByMyself"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests._16_FwBwArrows -->
+      <class name="Tests._15_QqDiscByMyself">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests._15_QqDiscByMyself -->
+      <class name="Tests._18_SocTypeAssert">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests._18_SocTypeAssert -->
       <class name="Tests._09_DetectLink">
         <methods>
           <include name="setUp"/>
-          <include name="_09_T_DetectLink"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- Tests._09_DetectLink -->
+      <class name="Tests._04_PopUpOnDetectMy">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests._04_PopUpOnDetectMy -->
+      <class name="Tests._23_DeletePersonFromGraph">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests._23_DeletePersonFromGraph -->
+      <class name="Tests._08_RoleInput">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests._08_RoleInput -->
+      <class name="Tests._03_PopUpOnLogin">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests._03_PopUpOnLogin -->
+      <class name="Tests._21_ClickOnLine">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests._21_ClickOnLine -->
+      <class name="Tests._10_ChemistryScoreButtonPopUp">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests._10_ChemistryScoreButtonPopUp -->
       <class name="Tests._02_InputFieldText">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- Tests._02_InputFieldText -->
-      <class name="Tests._13_LockEdit">
+      <class name="Tests._20_SelectVertex">
         <methods>
           <include name="setUp"/>
-          <include name="_13_T_LockEdit"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- Tests._13_LockEdit -->
+      </class> <!-- Tests._20_SelectVertex -->
+      <class name="Tests._01_FacebookAuthorisation">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests._01_FacebookAuthorisation -->
+      <class name="Tests._26_AddPersonFromGraph">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests._26_AddPersonFromGraph -->
+      <class name="Tests._14_QqForMyself">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests._14_QqForMyself -->
+      <class name="Tests._24_AllDeletePersonFromGraph">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests._24_AllDeletePersonFromGraph -->
+      <class name="Tests._06_NameRequired">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests._06_NameRequired -->
+      <class name="Tests._12_SaveTeamData">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests._12_SaveTeamData -->
     </classes>
   </test> <!-- mainPage(failed) -->
 </suite> <!-- Failed suite [Socionic suite] -->

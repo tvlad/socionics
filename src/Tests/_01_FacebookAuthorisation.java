@@ -22,7 +22,7 @@ public class _01_FacebookAuthorisation extends WebDrInit {
 		Main.Log.logToFile("_02_T_LogIn", fileName);
 
 		mainPage.logIn(); 
-		Thread.sleep(1500);
+		Thread.sleep(2000);
 		
 		Assert.assertEquals(mainPage.LoginName.getText(), DataProv.prop("name"));
 //		Assert.assertEquals(MainPage.InputColl().get(1).getAttribute("value"),

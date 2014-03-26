@@ -25,9 +25,6 @@ private static WebDriver driver;
 	@FindBy(css = ".value")
 	public WebElement persentOfRel;
 	
-	@FindBy(css = "div.value + div + div")
-	public WebElement RelationsVarietyText;
-	
 	@FindBy(css = ".team_strong.header_text.ng-binding")
 	public WebElement TeamStrongAspectText;
 	
@@ -54,9 +51,33 @@ private static WebDriver driver;
 	
 	@FindBy(css = ".btn.btn-warning > i")
 	public WebElement AddPersonFromGraph;
+	
+	@FindBy(css = ".btn.btn-warning.test.dropdown-toggle.ng-binding")
+	public WebElement detectButtonGraph;
+	
+	
+	@FindBy(linkText = "Discover by myself")
+	public WebElement TestLink;
+	
+//	-----------------------------------------------------------------------
+	
+	@FindBy(css = "div.person + div.relations.header_text.ng-binding")
+	public WebElement RelationsVarietyHeader;
+	
+	@FindBy(css = "div.team_description.ng-binding + div.relations.header_text.ng-binding")
+	public WebElement RelationsVarietyHeaderMain;
+	
+	@FindBy(css = "div#charts_person1 + div.personal_profile.header_text.ng-binding")
+	public WebElement PersonalProfileHeader;
+	
+	@FindBy(css = "div#charts_person2 + div.header_text.ng-binding")
+	public WebElement DescriptionHeader;
+	
+	@FindBy(css = ".top_fits.header_text.ng-binding")
+	public WebElement TopFitsHeader;
 
 
-//	List view . Add new person 
+//	.top_fits.header_text.ng-binding
 	
 // ---------------------------------------------------------------------------
 	
@@ -68,14 +89,18 @@ private static WebDriver driver;
 		return driver.findElements(By.cssSelector("div[id^='window'] > i")); //
 	}
 	
-//	div.fullName  #window200 > i.icon-remove-sign
+//	.ng-pristine.ng-invalid.ng-invalid-required  input
 	
 	public List<WebElement> lineColl() { //
-		return driver.findElements(By.cssSelector("div#container path")); //
+		return driver.findElements(By.cssSelector("div#container path.hideA")); //
 	}
 	
 	public List<WebElement> popUpColl() { //
 		return driver.findElements(By.cssSelector("div.fullName")); //
+	}
+	
+	public List<WebElement> inputFieldsColl() { //
+		return driver.findElements(By.cssSelector(".ng-pristine.ng-invalid.ng-invalid-required  input")); //
 	}
 	
 	

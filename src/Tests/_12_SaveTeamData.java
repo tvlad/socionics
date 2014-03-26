@@ -24,7 +24,7 @@ public class _12_SaveTeamData extends WebDrInit {
 
 		mainPage.logIn();
 		Thread.sleep(1000);
-		mainPage.inputPerson(2);
+		mainPage.inputPerson(1);
 		mainPage.clickAndTestAll();
 		Thread.sleep(1000);
 		
@@ -34,8 +34,8 @@ public class _12_SaveTeamData extends WebDrInit {
 //		}
 		mainPage.LogOutButt.click();
 		Thread.sleep(1000);
-		mainPage.logIn();
-		
+		mainPage.LogButt.click();
+		Thread.sleep(3000);
 		List<String> list_2 = mainPage.elList(mainPage.InputColl());
 		
 		Assert.assertTrue(list_1.equals(list_2));

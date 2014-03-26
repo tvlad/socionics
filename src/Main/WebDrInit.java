@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -82,6 +83,17 @@ public class WebDrInit {
 		driver.manage().window().maximize();
 		
 //		driver.manage().deleteAllCookies();
+		
+		MainPage mainpage = new MainPage(driver); //for IE case
+		if (mainpage.LoginName.isDisplayed()){
+			MainPage.LogOutButt.click();
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 		
 	}
 		

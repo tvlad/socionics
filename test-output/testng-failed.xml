@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Tests._26_AddPersonFromGraph">
+      <class name="Tests._07_IllegalMail">
         <methods>
-          <include name="setUp"/>
-          <include name="_25_T_ClickOnVertex"/>
           <include name="setFN"/>
+          <include name="_07_T_IllegalMail"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- Tests._26_AddPersonFromGraph -->
+      </class> <!-- Tests._07_IllegalMail -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

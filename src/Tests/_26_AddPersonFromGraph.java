@@ -1,6 +1,7 @@
 package Tests;
 
 import java.io.IOException;
+import java.util.List;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -10,14 +11,14 @@ import org.testng.annotations.Test;
 
 import pages.GraphPage;
 import pages.MainPage;
-import Main.Help;
+import pages.TestPage;
 import Main.WebDrInit;
 
 public class _26_AddPersonFromGraph extends WebDrInit{
 	
 
 	/*
-	 * Click on vertex
+	 * Add person from graph page
 	 */
 
 	@SuppressWarnings({ "unused", "static-access"})
@@ -39,12 +40,30 @@ public class _26_AddPersonFromGraph extends WebDrInit{
 		
 		graphPage.AddPersonFromGraph.click();
 		
-		Thread.sleep(3000);
+		String name = "Raf Air";
+		String email = "far_air@cc.com";
+		String role = "Boss";
+		
+		List<WebElement> input =  graphPage.inputFieldsColl();
+		input.get(0).sendKeys(name);
+		input.get(1).sendKeys(email);
+		input.get(2).sendKeys(role);
+		
+		Thread.sleep(1000);
+		
+		graphPage.detectButtonGraph.click();
+		graphPage.TestLink.click();
+		
+		Thread.sleep(500);
+		
+		TestPage testpage = new TestPage(driver);
+		testpage.takeTest();
+				
 		System.out.println("text - " );
 		
-//		Assert.assertEquals(graphPage.NameOnRightGraph.getText(), "");
+		Assert.assertEquals(mainPage.AllButt().size(), nPerson + 1);
 
-		Thread.sleep(2000);
+//		Thread.sleep(1000);
 		
 
 

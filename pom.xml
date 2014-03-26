@@ -16,4 +16,19 @@
       </plugin>
     </plugins>
   </build>
+  <dependencies>
+  	<dependency>
+  		<groupId>fgfg</groupId>
+  		<artifactId>ffff</artifactId>
+  	</dependency>
+  </dependencies>
+  <dependencyManagement>
+  	<dependencies>
+  		<dependency>
+  			<groupId>fgfg</groupId>
+  			<artifactId>ffff</artifactId>
+  			<version>555</version>
+  		</dependency>
+  	</dependencies>
+  </dependencyManagement>
 </project>

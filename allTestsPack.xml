@@ -22,6 +22,14 @@
 			<class name="Tests._16_FwBwArrows" />
 			<class name="Tests._17_WarningPopUpTestPage" />
 			<class name="Tests._18_SocTypeAssert" />
+			<class name="Tests._19_CommonElementsGraph" />
+			<class name="Tests._20_SelectVertex" />
+			<class name="Tests._21_ClickOnLine" />
+			<class name="Tests._22_PopUpOnVertex" />
+			<class name="Tests._23_DeletePersonFromGraph" />
+			<class name="Tests._24_AllDeletePersonFromGraph" />
+			<class name="Tests._25_ClickOnVertex" />
+			<class name="Tests._26_AddPersonFromGraph" />
 		</classes>
 	</test><!--Socionic suite-->
 </suite><!--Socionic suite-->

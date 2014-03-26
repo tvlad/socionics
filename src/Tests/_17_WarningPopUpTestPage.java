@@ -22,8 +22,7 @@ public class _17_WarningPopUpTestPage extends WebDrInit{
 		MainPage mainPage = new MainPage(driver);
 		mainPage.inputPerson(1);
 		mainPage.DetectButt().get(0).click();
-		mainPage.TestLinkColl().get(0).click();
-
+		
 		Thread.sleep(500);
 		
 		TestPage testPage = new TestPage(driver);
@@ -32,7 +31,7 @@ public class _17_WarningPopUpTestPage extends WebDrInit{
 		
 //		System.out.println("text - " + testPage.WarningPopUp.getText());
 		Assert.assertTrue(testPage.WarningPopUp.isDisplayed());
-		Assert.assertEquals(testPage.WarningPopUp.getText(), "Login and save your changed");
+		Assert.assertEquals(testPage.WarningPopUp.getText(), "Login and save your changes");
 		
 		Thread.sleep(1500);
 

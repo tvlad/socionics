@@ -23,7 +23,7 @@ public class _15_QqDiscByMyself extends WebDrInit{
 		MainPage mainPage = new MainPage(driver);
 		mainPage.inputPerson(2);
 		mainPage.DetectButt().get(1).click();
-		mainPage.TestLinkColl().get(1).click();
+		mainPage.TestLink.click();
 
 		Thread.sleep(500);
 		

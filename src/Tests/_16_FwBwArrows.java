@@ -19,12 +19,12 @@ public class _16_FwBwArrows extends WebDrInit{
 
 	@SuppressWarnings("static-access")
 	@Test(groups = "testPage")
-	public void _15_T_QqDiscByMyself() throws InterruptedException {
+	public void _16_T_FwBwArrows() throws InterruptedException {
 
 		MainPage mainPage = new MainPage(driver);
 		mainPage.inputPerson(1);
 		mainPage.DetectButt().get(0).click();
-		mainPage.TestLinkColl().get(0).click();
+	
 
 		Thread.sleep(500);
 		

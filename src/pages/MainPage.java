@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementNotVisibleException;
-//import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -156,7 +156,12 @@ public class MainPage {
 		Thread.sleep(500);
 		try {
 			logInLogik(driver);
-		} catch (ElementNotVisibleException e) {
+		} catch (NoSuchElementException e) {
+			LogOutI.click();
+			logInLogik(driver);
+		}
+		
+		catch (ElementNotVisibleException b){
 			LogOutI.click();
 			logInLogik(driver);
 		}

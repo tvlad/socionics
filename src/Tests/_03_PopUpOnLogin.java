@@ -29,7 +29,7 @@ public class _03_PopUpOnLogin extends WebDrInit{
 		move.perform();
 		Thread.sleep(1000);
 		
-		Assert.assertEquals(el.getAttribute("popover"), "Login and save your changed");
+		Assert.assertEquals(el.getAttribute("popover"), "Login and save your changes");
 
 	}
 

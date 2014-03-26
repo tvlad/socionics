@@ -42,7 +42,7 @@ public class _19_CommonElementsGraph extends WebDrInit{
 		Assert.assertTrue(dropDownAll.isEnabled());
 		Assert.assertEquals(graphPage.circleColl().size(), nPerson);
 		Assert.assertTrue(graphPage.persentOfRel.isEnabled());
-		Assert.assertEquals(graphPage.RelationsVarietyText.getText(), "Relations Variety");
+		Assert.assertEquals(graphPage.RelationsVarietyHeaderMain.getText(), "Relations Variety");
 		Assert.assertTrue(graphPage.RelationsVarietyGraph.isEnabled());
 		WebElement teamStrong = new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".team_strong.header_text.ng-binding")));
 		Assert.assertEquals(teamStrong.getText(), "Team Strong Aspects");
