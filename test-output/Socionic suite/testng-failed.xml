@@ -6,6 +6,7 @@
       <class name="Tests._22_PopUpOnVertex">
         <methods>
           <include name="setFN"/>
+          <include name="_22_T_PopUpOnVertex"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
@@ -52,19 +53,18 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- Tests._19_CommonElementsGraph -->
-      <class name="Tests._16_FwBwArrows">
-        <methods>
-          <include name="_15_T_QqDiscByMyself"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests._16_FwBwArrows -->
       <class name="Tests._15_QqDiscByMyself">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- Tests._15_QqDiscByMyself -->
+      <class name="Tests._16_FwBwArrows">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests._16_FwBwArrows -->
       <class name="Tests._18_SocTypeAssert">
         <methods>
           <include name="setUp"/>
@@ -104,6 +104,7 @@
       <class name="Tests._21_ClickOnLine">
         <methods>
           <include name="setUp"/>
+          <include name="_21_T_ClickOnLine"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- Tests._21_ClickOnLine -->
@@ -133,24 +134,27 @@
       </class> <!-- Tests._01_FacebookAuthorisation -->
       <class name="Tests._26_AddPersonFromGraph">
         <methods>
+          <include name="_25_T_ClickOnVertex"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- Tests._26_AddPersonFromGraph -->
+      <class name="Tests._24_AllDeletePersonFromGraph">
+        <methods>
+          <include name="_24_T_AllDeletePersonFromGraph"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests._24_AllDeletePersonFromGraph -->
       <class name="Tests._14_QqForMyself">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- Tests._14_QqForMyself -->
-      <class name="Tests._24_AllDeletePersonFromGraph">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests._24_AllDeletePersonFromGraph -->
       <class name="Tests._06_NameRequired">
         <methods>
+          <include name="_06_T_NameRequired"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
@@ -158,6 +162,7 @@
       <class name="Tests._12_SaveTeamData">
         <methods>
           <include name="setUp"/>
+          <include name="_12_T_SaveTeamData"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- Tests._12_SaveTeamData -->

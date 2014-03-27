@@ -1,37 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="97730" started-at="2014-03-26T16:02:53Z" finished-at="2014-03-26T16:04:30Z">
+  <suite name="Default suite" duration-ms="91905" started-at="2014-03-27T16:21:25Z" finished-at="2014-03-27T16:22:57Z">
     <groups>
-      <group name="graphPage">
-        <method signature="_25_ClickOnVertex._25_T_ClickOnVertex()[pri:0, instance:Tests._25_ClickOnVertex@28f67ac7]" name="_25_T_ClickOnVertex" class="Tests._25_ClickOnVertex"/>
-        <method signature="_25_ClickOnVertex._26_T_()[pri:0, instance:Tests._25_ClickOnVertex@28f67ac7]" name="_26_T_" class="Tests._25_ClickOnVertex"/>
-      </group> <!-- graphPage -->
+      <group name="demo">
+        <method signature="_05_SociotypeVerify._05_T_SociotypeVerify()[pri:0, instance:Tests_pro._05_SociotypeVerify@28f67ac7]" name="_05_T_SociotypeVerify" class="Tests_pro._05_SociotypeVerify"/>
+      </group> <!-- demo -->
     </groups>
-    <test name="Default test" duration-ms="97730" started-at="2014-03-26T16:02:53Z" finished-at="2014-03-26T16:04:30Z">
-      <class name="Tests._25_ClickOnVertex">
-        <test-method status="PASS" signature="setFN()[pri:0, instance:Tests._25_ClickOnVertex@28f67ac7]" name="setFN" is-config="true" duration-ms="24" started-at="2014-03-26T18:02:53Z" finished-at="2014-03-26T18:02:53Z">
+    <test name="Default test" duration-ms="91905" started-at="2014-03-27T16:21:25Z" finished-at="2014-03-27T16:22:57Z">
+      <class name="Tests_pro._05_SociotypeVerify">
+        <test-method status="PASS" signature="setFN()[pri:0, instance:Tests_pro._05_SociotypeVerify@28f67ac7]" name="setFN" is-config="true" duration-ms="39" started-at="2014-03-27T18:21:25Z" finished-at="2014-03-27T18:21:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setFN -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests._25_ClickOnVertex@28f67ac7]" name="setUp" is-config="true" duration-ms="4899" started-at="2014-03-26T18:02:53Z" finished-at="2014-03-26T18:02:58Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests_pro._05_SociotypeVerify@28f67ac7]" name="setUp" is-config="true" duration-ms="7293" started-at="2014-03-27T18:21:25Z" finished-at="2014-03-27T18:21:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="_25_T_ClickOnVertex()[pri:0, instance:Tests._25_ClickOnVertex@28f67ac7]" name="_25_T_ClickOnVertex" duration-ms="89869" started-at="2014-03-26T18:02:58Z" finished-at="2014-03-26T18:04:27Z">
+        <test-method status="PASS" signature="_05_T_SociotypeVerify()[pri:0, instance:Tests_pro._05_SociotypeVerify@28f67ac7]" name="_05_T_SociotypeVerify" duration-ms="84599" started-at="2014-03-27T18:21:32Z" finished-at="2014-03-27T18:22:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- _25_T_ClickOnVertex -->
-        <test-method status="PASS" signature="_26_T_()[pri:0, instance:Tests._25_ClickOnVertex@28f67ac7]" name="_26_T_" duration-ms="1773" started-at="2014-03-26T18:04:27Z" finished-at="2014-03-26T18:04:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- _26_T_ -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests._25_ClickOnVertex@28f67ac7]" name="tearDown" is-config="true" duration-ms="1163" started-at="2014-03-26T18:04:29Z" finished-at="2014-03-26T18:04:30Z">
+        </test-method> <!-- _05_T_SociotypeVerify -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests_pro._05_SociotypeVerify@28f67ac7]" name="tearDown" is-config="true" duration-ms="1" started-at="2014-03-27T18:22:57Z" finished-at="2014-03-27T18:22:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests._25_ClickOnVertex -->
+      </class> <!-- Tests_pro._05_SociotypeVerify -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

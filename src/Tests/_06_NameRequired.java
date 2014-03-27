@@ -30,9 +30,9 @@ public class _06_NameRequired extends WebDrInit {
 		mainPage.DetectButt().get(1).click();
 		mainPage.TestLink.click();
 		Thread.sleep(2000);
-		Assert.assertTrue(mainPage.RequiredColl().get(2).isDisplayed());
+		Assert.assertTrue(mainPage.RequiredColl().get(1).isDisplayed());
 		Assert.assertEquals(mainPage.RequiredColl().get(0).getText(), "required");
-		Assert.assertEquals(mainPage.RequiredColl().get(2).getText(), "required"); // Непонятно почему коллекция содержит 4 елемента
+		Assert.assertEquals(mainPage.RequiredColl().get(1).getText(), "required"); // Непонятно почему коллекция содержит 4 елемента
 	}
 
 }

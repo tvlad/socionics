@@ -101,8 +101,8 @@ public class WebDrInit {
 	
 	@AfterClass
 	public void tearDown() throws Exception {
-		driver.close();
-		driver.quit();
+//		driver.close();
+//		driver.quit();
 		String verificationErrorString = verificationErrors.toString();
 		if (!"".equals(verificationErrorString)) {
 			fail(verificationErrorString);
