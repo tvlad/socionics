@@ -96,7 +96,7 @@ public class MainPage {
 	}
 	
 	public static List<WebElement> AllButt() { //
-		return driver.findElements(By.cssSelector(".btn.btn-warning.test.dropdown-toggle.icon.ng-binding")); // //ng-form[*]/div[4]/div[1]/div/a
+		return driver.findElements(By.cssSelector(".btn.btn-warning.test.dropdown-toggle.icon.ng-binding")); // //ng-form[*]/div[4]/div[1]/div/a //.btn.btn-warning.test.dropdown-toggle.icon.ng-binding
 	}
 	
 	

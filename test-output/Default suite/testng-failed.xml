@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Tests_pro._05_SociotypeVerify">
+      <class name="Tests._27_LineSwitch">
         <methods>
           <include name="setFN"/>
-          <include name="_05_T_SociotypeVerify"/>
+          <include name="_27_T_LineSwitch"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- Tests_pro._05_SociotypeVerify -->
+      </class> <!-- Tests._27_LineSwitch -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

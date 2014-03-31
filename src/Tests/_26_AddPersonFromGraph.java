@@ -23,7 +23,7 @@ public class _26_AddPersonFromGraph extends WebDrInit{
 
 	@SuppressWarnings({ "unused", "static-access"})
 	@Test(groups = "graphPage")
-	public void _25_T_ClickOnVertex() throws IOException, InterruptedException {
+	public void _26_T_AddPersonFromGraph() throws IOException, InterruptedException {
 
 		MainPage mainPage = new MainPage(driver);
 

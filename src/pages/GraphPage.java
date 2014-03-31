@@ -75,9 +75,9 @@ private static WebDriver driver;
 	
 	@FindBy(css = ".top_fits.header_text.ng-binding")
 	public WebElement TopFitsHeader;
-
-
-//	.top_fits.header_text.ng-binding
+	
+	
+//	.top_fits.header_text.ng-binding   
 	
 // ---------------------------------------------------------------------------
 	
@@ -91,8 +91,22 @@ private static WebDriver driver;
 	
 //	.ng-pristine.ng-invalid.ng-invalid-required  input
 	
-	public List<WebElement> lineColl() { //
-		return driver.findElements(By.cssSelector("div#container path.hideA")); //
+	public List<WebElement> lineAllColl() { //
+		return driver.findElements(By.cssSelector("._jsPlumb_connector path:nth-of-type(1)")); // div#container ._jsPlumb_connector     div#container path.hideA  ._jsPlumb_connector path:nth-of-type(1)
+	}
+	
+	public List<WebElement> lineInvisibleColl() { //
+		return driver.findElements(By.cssSelector("._jsPlumb_connector[style*='display: none'] path:nth-of-type(1)")); 
+	}
+	
+	public List<WebElement> lineVisibleColl() { //
+		return driver.findElements(By.cssSelector("._jsPlumb_connector[style*='display: block'] path:nth-of-type(1)")); 
+	}
+	
+//	._jsPlumb_connector[style*='display: none'] path:nth-of-type(1)
+	
+	public List<WebElement> lineColl2() { //
+		return driver.findElements(By.xpath("//*[@id='container']/svg[*]/path[1]")); // div#container ._jsPlumb_connector     div#container path.hideA
 	}
 	
 	public List<WebElement> popUpColl() { //
@@ -102,6 +116,12 @@ private static WebDriver driver;
 	public List<WebElement> inputFieldsColl() { //
 		return driver.findElements(By.cssSelector(".ng-pristine.ng-invalid.ng-invalid-required  input")); //
 	}
+	
+	public List<WebElement> DropDownPosition() { //
+		return driver.findElements(By.cssSelector(".dropdown_line.ng-binding")); //
+	}
+	
+//	div#highcharts-32  .highcharts-tooltip tspan:nth-of-type(4) - css element collection "Relations Variety" pop-up on collumn 
 	
 	
 	public static void delAllPer() throws InterruptedException {

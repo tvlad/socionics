@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Socionic suite">
+	<test verbose="2" name="mainPage" preserve-order="true">
+		<packages>mainPage</packages>
+		<classes>
+			<class name="Tests._01_FacebookAuthorisation" />
+			<class name="Tests._02_InputFieldText" />
+		</classes>
+	</test><!--Socionic suite-->
+</suite><!--Socionic suite-->

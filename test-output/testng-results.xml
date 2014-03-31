@@ -1,32 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="91905" started-at="2014-03-27T16:21:25Z" finished-at="2014-03-27T16:22:57Z">
+  <suite name="Socionic suite" duration-ms="30735" started-at="2014-03-31T13:53:08Z" finished-at="2014-03-31T13:53:39Z">
     <groups>
-      <group name="demo">
-        <method signature="_05_SociotypeVerify._05_T_SociotypeVerify()[pri:0, instance:Tests_pro._05_SociotypeVerify@28f67ac7]" name="_05_T_SociotypeVerify" class="Tests_pro._05_SociotypeVerify"/>
-      </group> <!-- demo -->
+      <group name="mainPage">
+        <method signature="_01_FacebookAuthorisation._01_T_FacebookAuthorisation()[pri:0, instance:Tests._01_FacebookAuthorisation@5ba23b66]" name="_01_T_FacebookAuthorisation" class="Tests._01_FacebookAuthorisation"/>
+        <method signature="_02_InputFieldText._02_T_nputFieldText()[pri:0, instance:Tests._02_InputFieldText@d7b1517]" name="_02_T_nputFieldText" class="Tests._02_InputFieldText"/>
+      </group> <!-- mainPage -->
     </groups>
-    <test name="Default test" duration-ms="91905" started-at="2014-03-27T16:21:25Z" finished-at="2014-03-27T16:22:57Z">
-      <class name="Tests_pro._05_SociotypeVerify">
-        <test-method status="PASS" signature="setFN()[pri:0, instance:Tests_pro._05_SociotypeVerify@28f67ac7]" name="setFN" is-config="true" duration-ms="39" started-at="2014-03-27T18:21:25Z" finished-at="2014-03-27T18:21:25Z">
+    <test name="mainPage" duration-ms="30735" started-at="2014-03-31T13:53:08Z" finished-at="2014-03-31T13:53:39Z">
+      <class name="Tests._02_InputFieldText">
+        <test-method status="PASS" signature="setFN()[pri:0, instance:Tests._02_InputFieldText@d7b1517]" name="setFN" is-config="true" duration-ms="25" started-at="2014-03-31T16:53:08Z" finished-at="2014-03-31T16:53:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setFN -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests_pro._05_SociotypeVerify@28f67ac7]" name="setUp" is-config="true" duration-ms="7293" started-at="2014-03-27T18:21:25Z" finished-at="2014-03-27T18:21:32Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests._02_InputFieldText@d7b1517]" name="setUp" is-config="true" duration-ms="10997" started-at="2014-03-31T16:53:26Z" finished-at="2014-03-31T16:53:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="_05_T_SociotypeVerify()[pri:0, instance:Tests_pro._05_SociotypeVerify@28f67ac7]" name="_05_T_SociotypeVerify" duration-ms="84599" started-at="2014-03-27T18:21:32Z" finished-at="2014-03-27T18:22:57Z">
+        <test-method status="PASS" signature="_02_T_nputFieldText()[pri:0, instance:Tests._02_InputFieldText@d7b1517]" name="_02_T_nputFieldText" duration-ms="1572" started-at="2014-03-31T16:53:37Z" finished-at="2014-03-31T16:53:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- _05_T_SociotypeVerify -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests_pro._05_SociotypeVerify@28f67ac7]" name="tearDown" is-config="true" duration-ms="1" started-at="2014-03-27T18:22:57Z" finished-at="2014-03-27T18:22:57Z">
+        </test-method> <!-- _02_T_nputFieldText -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests._02_InputFieldText@d7b1517]" name="tearDown" is-config="true" duration-ms="198" started-at="2014-03-31T16:53:38Z" finished-at="2014-03-31T16:53:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests_pro._05_SociotypeVerify -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- Tests._02_InputFieldText -->
+      <class name="Tests._01_FacebookAuthorisation">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests._01_FacebookAuthorisation@5ba23b66]" name="setUp" is-config="true" duration-ms="12027" started-at="2014-03-31T16:53:08Z" finished-at="2014-03-31T16:53:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="_01_T_FacebookAuthorisation()[pri:0, instance:Tests._01_FacebookAuthorisation@5ba23b66]" name="_01_T_FacebookAuthorisation" duration-ms="5702" started-at="2014-03-31T16:53:20Z" finished-at="2014-03-31T16:53:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- _01_T_FacebookAuthorisation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests._01_FacebookAuthorisation@5ba23b66]" name="tearDown" is-config="true" duration-ms="225" started-at="2014-03-31T16:53:26Z" finished-at="2014-03-31T16:53:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests._01_FacebookAuthorisation -->
+    </test> <!-- mainPage -->
+  </suite> <!-- Socionic suite -->
 </testng-results>

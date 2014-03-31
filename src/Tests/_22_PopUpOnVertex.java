@@ -32,7 +32,7 @@ public class _22_PopUpOnVertex extends WebDrInit{
 		
 		String name = mainPage.InputColl().get(3).getAttribute("value");
 		
-		String soc = mainPage.AllButt().get(1).getText();
+		String soc = mainPage.UnDetectButt().get(1).getText();
 
 		mainPage.BuildGraph.click();
 		Thread.sleep(1000);

@@ -38,7 +38,7 @@ public class _21_ClickOnLine extends WebDrInit{
 		WebElement dropDownAll = new WebDriverWait(driver, 10)
 				.until(ExpectedConditions.visibilityOf(graphPage.DropDownAll));
 
-		List<WebElement> lines = graphPage.lineColl();
+		List<WebElement> lines = graphPage.lineAllColl();
 		// System.out.println("lines quontity - " + lines.size());
 
 		Help.mouseOverHelp(lines.get(0));
