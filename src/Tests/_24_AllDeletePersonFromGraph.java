@@ -26,7 +26,7 @@ public class _24_AllDeletePersonFromGraph extends WebDrInit{
 		
 		MainPage mainPage = new MainPage(driver);
 
-		int nPerson = 10;
+		int nPerson = 7;
 		MainPage.inputPerson(nPerson);
 		mainPage.clickAndTestAll();	
 		

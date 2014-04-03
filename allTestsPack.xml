@@ -30,6 +30,7 @@
 			<class name="Tests._24_AllDeletePersonFromGraph" />
 			<class name="Tests._25_ClickOnVertex" />
 			<class name="Tests._26_AddPersonFromGraph" />
+			<class name="Tests._27_LineSwitch" />
 		</classes>
 	</test><!--Socionic suite-->
 </suite><!--Socionic suite-->

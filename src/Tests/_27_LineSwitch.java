@@ -84,12 +84,14 @@ public class _27_LineSwitch extends WebDrInit{
 
 			
 			
-			Thread.sleep(1000);
+			Thread.sleep(500);
 		}
-		
 
+	}
+
+}
 		
-		Thread.sleep(1000);
+		
 
 //		Best				#51a351
 //		Good				#49afcd
@@ -98,12 +100,9 @@ public class _27_LineSwitch extends WebDrInit{
 //		Tensed				#faa732
 //		Undesirable			#da4f49
 	
-//		Thread.sleep(1000); 
 
-	}
-	
 
-}
+
 
 
 

@@ -31,7 +31,7 @@ private static WebDriver driver;
 	@FindBy(css = "div[id='charts_team1']")
 	public WebElement RelationsVarietyGraph;
 	
-	@FindBy(xpath = "//button[contains(text(), 'OK')]")
+	@FindBy(css = ".modal-footer .btn.btn-primary")  // //button[contains(text(), 'OK')]
 	public static WebElement AlertOK;
 	
 	@FindBy(xpath = "//button[contains(text(), 'Cancel')]")
@@ -43,10 +43,10 @@ private static WebDriver driver;
 	@FindBy(xpath = "//button[contains(text(), 'Graph view')]")
 	public WebElement GraphViewButton;
 	
-	@FindBy(xpath = "//div[2]/div[3]/div[1]/div[1]")
+	@FindBy(css = ".info.person_selected  .name.ng-binding")
 	public WebElement NameOnRightGraph;
 	
-	@FindBy(xpath = "//div[3]/div[1]/div[2]")
+	@FindBy(css = ".info.person_selected  .sociotype.ng-binding")
 	public WebElement SocioOnRightGraph;
 	
 	@FindBy(css = ".btn.btn-warning > i")
@@ -76,8 +76,17 @@ private static WebDriver driver;
 	@FindBy(css = ".top_fits.header_text.ng-binding")
 	public WebElement TopFitsHeader;
 	
+	@FindBy(css = "div.fullName[style*='block']")
+	public WebElement VisibleVertexPopUp;
 	
-//	.top_fits.header_text.ng-binding   
+	@FindBy(css = "div[id^='jsPlumb'][style*='block'] div.labelPer")
+	public WebElement VisibleLinePopUp;
+	
+	@FindBy(css = ".label.ng-binding")
+	public WebElement CompatibilityType;
+	
+	
+//	.label.ng-binding
 	
 // ---------------------------------------------------------------------------
 	
@@ -121,24 +130,48 @@ private static WebDriver driver;
 		return driver.findElements(By.cssSelector(".dropdown_line.ng-binding")); //
 	}
 	
-//	div#highcharts-32  .highcharts-tooltip tspan:nth-of-type(4) - css element collection "Relations Variety" pop-up on collumn 
+	public List<WebElement> NameOnLineClickColl() { //
+		return driver.findElements(By.cssSelector(".person_block  .name.ng-binding")); //
+	}
+	
+	public List<WebElement> SociotypeOnLineClickColl() { //
+		return driver.findElements(By.cssSelector(".person_block  .sociotype.ng-binding")); //
+	}
+	
+	public List<WebElement> RelateRowColl() { // rows of relation graph
+		return driver.findElements(By.cssSelector(".highcharts-series highcharts-tracker rect")); //("//g[1]/rect[*]")); //
+	}
+	
+//	div#highcharts-32  g[1]/rect[*]
 	
 	
 	public static void delAllPer() throws InterruptedException {
 		int cyrcles = circleDelColl().size();
-		while ( cyrcles > 1){
-			
-			Help.mouseOverHelp(circleColl().get(cyrcles-1));
-			circleDelColl().get(cyrcles-1).click();
+		while (cyrcles > 1) {
+
+			Help.mouseOverHelp(circleColl().get(cyrcles - 1));
+			circleDelColl().get(cyrcles - 1).click();
+			Thread.sleep(1000);
 			AlertOK.click();
 			cyrcles = circleDelColl().size();
-			
+
 			Thread.sleep(1000);
 		}
-		
-		
-		
-		
+	}
+	
+//	return list of string
+	public String[] textFromPopUp(WebElement el, WebElement elseEl) throws InterruptedException {
+		Help.mouseOverHelp(el);
+		String str = Help.noBr(elseEl.getText()); 	// get text from pop-up and delete //n-symbol
+		String[] popUpText = Help.splitStr(str, ": ");
+		return popUpText;
+	}
+	
+//	return string
+	public String srtingFromPopUp(WebElement el, WebElement elseEl) throws InterruptedException {
+		Help.mouseOverHelp(el);
+		String str = Help.noBr(elseEl.getText()); 	// get text from pop-up and delete //n-symbol
+		return str;
 	}
 
 }

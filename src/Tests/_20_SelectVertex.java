@@ -48,6 +48,7 @@ public class _20_SelectVertex extends WebDrInit{
 		
 		// Click on 1-st circle 
 		circle.get(0).click();
+		Thread.sleep(1000); // need for Chrome and IE
 		
 		Point loc2 = circle.get(0).getLocation();
 		System.out.println("location 2 - " + loc2);

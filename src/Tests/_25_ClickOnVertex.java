@@ -41,7 +41,7 @@ public class _25_ClickOnVertex extends WebDrInit{
 		Thread.sleep(2000);
 		Help.mouseOverHelp(graphPage.circleColl().get(nPerson-1));
 
-		String str = Help.noBr(graphPage.popUpColl().get(nPerson-1).getText()); // get text from pop-up and delete //n-symbol
+		String str = Help.noBr(graphPage.popUpColl().get(nPerson-1).getText()); // get text from pop-up and delete /n-symbol
 		String[] popUpText = Help.splitStr(str, ": ");
 		
 //		System.out.println("text - " + str);

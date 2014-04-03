@@ -38,13 +38,16 @@ public class _23_DeletePersonFromGraph extends WebDrInit{
 		WebElement dropDownAll = new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(graphPage.DropDownAll));
 		
 		Help.mouseOverHelp(graphPage.circleColl().get(0));
+		Thread.sleep(500);
 		graphPage.circleDelColl().get(0).click();
 		
 //		Alert alert = (new WebDriverWait(driver, 3))
 //                .until(ExpectedConditions.alertIsPresent());
 //		alert.accept();
 		
-		graphPage.AlertOK.click();
+		WebElement AlertOK = new WebDriverWait(driver, 5).until(ExpectedConditions.elementToBeClickable(graphPage.AlertOK));
+		Thread.sleep(1000);
+		AlertOK.click();
 				
 		Thread.sleep(500);
 		

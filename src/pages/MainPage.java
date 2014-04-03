@@ -134,7 +134,7 @@ public class MainPage {
 	}
 	
 	public List<WebElement> RequiredColl() { //
-		return driver.findElements(By.xpath("//ng-form[*]/div[1]/div/div/span")); //
+		return driver.findElements(By.cssSelector(".dropdown-menu.ng-isolate-scope + .errorMessage.ng-binding")); //
 	}
 	
 	public List<WebElement> MailWarningColl() { //

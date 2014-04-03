@@ -6,7 +6,6 @@
       <class name="Tests._22_PopUpOnVertex">
         <methods>
           <include name="setFN"/>
-          <include name="_22_T_PopUpOnVertex"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
@@ -35,18 +34,18 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- Tests._25_ClickOnVertex -->
-      <class name="Tests._17_WarningPopUpTestPage">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests._17_WarningPopUpTestPage -->
       <class name="Tests._05_PopUpOnDetectMy_02">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- Tests._05_PopUpOnDetectMy_02 -->
+      <class name="Tests._17_WarningPopUpTestPage">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests._17_WarningPopUpTestPage -->
       <class name="Tests._19_CommonElementsGraph">
         <methods>
           <include name="setUp"/>
@@ -71,6 +70,12 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- Tests._18_SocTypeAssert -->
+      <class name="Tests._27_LineSwitch">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests._27_LineSwitch -->
       <class name="Tests._09_DetectLink">
         <methods>
           <include name="setUp"/>
@@ -122,6 +127,7 @@
       </class> <!-- Tests._02_InputFieldText -->
       <class name="Tests._20_SelectVertex">
         <methods>
+          <include name="_20_T_SelectVertex"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
@@ -134,7 +140,6 @@
       </class> <!-- Tests._01_FacebookAuthorisation -->
       <class name="Tests._26_AddPersonFromGraph">
         <methods>
-          <include name="_25_T_ClickOnVertex"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
@@ -154,7 +159,6 @@
       </class> <!-- Tests._14_QqForMyself -->
       <class name="Tests._06_NameRequired">
         <methods>
-          <include name="_06_T_NameRequired"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
@@ -162,7 +166,6 @@
       <class name="Tests._12_SaveTeamData">
         <methods>
           <include name="setUp"/>
-          <include name="_12_T_SaveTeamData"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- Tests._12_SaveTeamData -->

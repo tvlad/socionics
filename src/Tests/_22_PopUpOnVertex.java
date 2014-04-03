@@ -48,7 +48,7 @@ public class _22_PopUpOnVertex extends WebDrInit{
 		String att = graphPage.popUpColl().get(0).getAttribute("style");
 		String[] sdf = Help.splitStr(att, "; ");
 		
-		Assert.assertEquals(sdf[sdf.length-1], "block", "Pop-up invisible");
+		Assert.assertEquals(sdf[sdf.length-1], "block", "Pop-up invisible:");
 		
 		String str = Help.noBr(graphPage.popUpColl().get(0).getText());
 		
