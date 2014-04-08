@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Tests._20_SelectVertex">
+      <class name="Tests_pro.ProTest">
         <methods>
-          <include name="setFN"/>
-          <include name="_20_T_SelectVertex"/>
+          <include name="_00_T_Pro"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="setFN"/>
         </methods>
-      </class> <!-- Tests._20_SelectVertex -->
+      </class> <!-- Tests_pro.ProTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

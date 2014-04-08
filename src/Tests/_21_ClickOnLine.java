@@ -22,7 +22,7 @@ public class _21_ClickOnLine extends WebDrInit {
 	 * Verify click on line
 	 */
 
-	@SuppressWarnings({ "unused", "static-access" })
+	@SuppressWarnings({ "unused", "static-access" }) 
 	@Test(groups = "graphPage")
 	public void _21_T_ClickOnLine() throws IOException, InterruptedException {
 
@@ -32,9 +32,9 @@ public class _21_ClickOnLine extends WebDrInit {
 		int nPerson = 2;
 		MainPage.inputPerson(nPerson);
 		mainPage.clickAndTestAll();
-
-		mainPage.BuildGraph.click();
 		Thread.sleep(2000);
+		mainPage.BuildGraph.click();
+		Thread.sleep(1000);
 		GraphPage graphPage = new GraphPage(driver);
 
 		// Verified for load graph page

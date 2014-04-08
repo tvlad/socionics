@@ -160,13 +160,17 @@ public class MainPage {
 			LogOutI.click();
 			logInLogik(driver);
 		}
-		
-		catch (ElementNotVisibleException b){
+
+		catch (ElementNotVisibleException b) {
 			LogOutI.click();
 			logInLogik(driver);
 		}
-		
+
 		Thread.sleep(500);
+		WebElement loginName = new WebDriverWait(driver, 10)
+				.until(ExpectedConditions.visibilityOf(LoginName));
+		loginName.getText();
+
 	}
 	
 	public static void logInLogik(WebDriver driver) throws InterruptedException {

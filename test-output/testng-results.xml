@@ -2,31 +2,31 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25174" started-at="2014-04-03T08:04:14Z" finished-at="2014-04-03T08:04:39Z">
+  <suite name="Default suite" duration-ms="15053" started-at="2014-04-08T08:09:29Z" finished-at="2014-04-08T08:09:44Z">
     <groups>
-      <group name="graphPage">
-        <method signature="_20_SelectVertex._20_T_SelectVertex()[pri:0, instance:Tests._20_SelectVertex@28f67ac7]" name="_20_T_SelectVertex" class="Tests._20_SelectVertex"/>
-      </group> <!-- graphPage -->
+      <group name="mainPage">
+        <method signature="_01_FacebookAuthorisation._01_T_FacebookAuthorisation()[pri:0, instance:Tests._01_FacebookAuthorisation@1a5dc796]" name="_01_T_FacebookAuthorisation" class="Tests._01_FacebookAuthorisation"/>
+      </group> <!-- mainPage -->
     </groups>
-    <test name="Default test" duration-ms="25174" started-at="2014-04-03T08:04:14Z" finished-at="2014-04-03T08:04:39Z">
-      <class name="Tests._20_SelectVertex">
-        <test-method status="PASS" signature="setFN()[pri:0, instance:Tests._20_SelectVertex@28f67ac7]" name="setFN" is-config="true" duration-ms="25" started-at="2014-04-03T11:04:14Z" finished-at="2014-04-03T11:04:14Z">
+    <test name="Default test" duration-ms="15053" started-at="2014-04-08T08:09:29Z" finished-at="2014-04-08T08:09:44Z">
+      <class name="Tests._01_FacebookAuthorisation">
+        <test-method status="PASS" signature="setFN()[pri:0, instance:Tests._01_FacebookAuthorisation@1a5dc796]" name="setFN" is-config="true" duration-ms="17" started-at="2014-04-08T11:09:29Z" finished-at="2014-04-08T11:09:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setFN -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests._20_SelectVertex@28f67ac7]" name="setUp" is-config="true" duration-ms="7262" started-at="2014-04-03T11:04:14Z" finished-at="2014-04-03T11:04:21Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests._01_FacebookAuthorisation@1a5dc796]" name="setUp" is-config="true" duration-ms="7146" started-at="2014-04-08T11:09:29Z" finished-at="2014-04-08T11:09:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="_20_T_SelectVertex()[pri:0, instance:Tests._20_SelectVertex@28f67ac7]" name="_20_T_SelectVertex" duration-ms="15595" started-at="2014-04-03T11:04:21Z" finished-at="2014-04-03T11:04:37Z">
+        <test-method status="PASS" signature="_01_T_FacebookAuthorisation()[pri:0, instance:Tests._01_FacebookAuthorisation@1a5dc796]" name="_01_T_FacebookAuthorisation" duration-ms="7650" started-at="2014-04-08T11:09:36Z" finished-at="2014-04-08T11:09:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- _20_T_SelectVertex -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests._20_SelectVertex@28f67ac7]" name="tearDown" is-config="true" duration-ms="2303" started-at="2014-04-03T11:04:37Z" finished-at="2014-04-03T11:04:39Z">
+        </test-method> <!-- _01_T_FacebookAuthorisation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests._01_FacebookAuthorisation@1a5dc796]" name="tearDown" is-config="true" duration-ms="244" started-at="2014-04-08T11:09:44Z" finished-at="2014-04-08T11:09:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests._20_SelectVertex -->
+      </class> <!-- Tests._01_FacebookAuthorisation -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

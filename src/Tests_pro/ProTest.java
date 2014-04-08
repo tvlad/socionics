@@ -21,7 +21,7 @@ public class ProTest extends WebDrInit {
 		
 		mainPage.logIn();
 		Thread.sleep(3000);
-		mainPage.inputPerson(9);
+		mainPage.inputPerson(5);
 		Thread.sleep(1000);
 		mainPage.clickAndTestAll();
 		
